@@ -6,6 +6,9 @@
     <title>Modelagem de dados</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
+      body{
+        background-color: #A4BAD2;
+      }
         .borda{
             border: 1px solid black;
         }
@@ -18,36 +21,233 @@
             <div class="col">
                 <h1>Modelagem de Dados</h1>
                 <h2>Bóson Treinamentos</h2>
-                <h5>Anotações dos estudos do curso.</h5>
+                <h4>Anotações dos estudos do curso.</h4>
             </div>
         </div>
+      <!--INÍCIO CARD-->
+        <div class="card mt-3">
+          <div class="card-header">
+            <a target="_blank" href="https://youtu.be/ZX7EuRWRdZg">Níveis de Modelagem</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Classificamos o processo de modelagem de dados em três níveis:</h5>
+            <ul>
+                <li>
+                  Modelo Conceitual (alto nível) - MCD;
+                </li>
+                <li>
+                  Modelo Lógico - MLD;
+                </li>
+                <li>
+                  Modelo Físico (baixo nível) - MFD;
+                </li>
+            </ul>
+            <p class="card-text">Pode-se chamar também de: Arquitetura em 3 níveis.</p>
+            <h5 class="card-title mt-2"> Modelo Conceitual</h5>
+            <div class="ml-3">
+              <p class="card-text">
+                Esta é a primeira fase da modelagem, onde representaremos o mundo real por meio de uma visão simplificada dos dados e seus relacionamentos. Assim poderemos determinar quais informações serão armazenadas no BD.
+              </p>
+              <p class="card-text">Neste nível o projeto é independente de SGBD.</p>
+              <ul>
+                <li>
+                  Ex.: <b>Cadastro de produtos de uma loja.</b>
+                  <br>
+                  Dados necessários:
+                </li>
+                  <ul>
+                    <li>
+                      Nome do produto;
+                    </li>
+                    <li>
+                      Categoria de produto(limpeza, higiene, etc.);
+                    </li>
+                    <li>
+                      Código do fornecedor;
+                    </li>
+                    <li>
+                      Tipo de embalagem;
+                    </li>
+                    <li>
+                      Tamanho;
+                    </li>
+                    <li>
+                      Quantidade.
+                    </li>
+                  </ul>
+              </ul>
+              <p class="card-text">
+                Neste nível, detalhes da implementação não aparecem, porém <b>é suficientemente detalhado a ponto de ser possível descrever os tipos de dados requeridos, seus relacionamentos entre si e regras de consistência</b>.
+              </p>
+          </div>
+          <h5 class="card-title mt-2"> Modelo Lógico</h5>
+          <div class="ml-3">
+            <ul>
+              <li>
+                Um modelo lógico possui conceitos que os usuários são capazes de entender, ao mesmo tempo em que não está distante do modelo físico do banco de dados;
+              </li>
+              <li>
+                neste nível o projeto é independente de SGBD.
+              </li>
+              <li>
+                Consiste na especificação lógica dos dados em um formato adequado ao SGBD escolhido. Os tipos de dados são completamente definidos.
+              </li>
+            </ul>
+          </div>
+          <h5 class="card-title mt-2"> Modelo Físico</h5>
+          <div class="ml-3">
+            <ul>
+              <li>
+                <b>A partir de um modelo lógico</b> nós derivamos o <b>modelo físico</b>, onde se detalham os componentes de estrutura física do banco de dados, incluindo tabelas, campos, tipos de valores, restrições, etc;
+              </li>
+              <li>
+                Ao criarmos o modelo físico, poderemos partir para a implementação física do banco de dados, utilizando o SGBD mais adequado;
+              </li>
+            </ul>
+          </div>
+          <h5 class="card-title mt-2"> Esquema do Bando de Dados</h5>
+          <div class="ml-3">
+            <ul>
+              <li>
+                Um esquema é uma definição do Banco de dados especificada durante o projeto, armazenada no <b>Dicionário de Dados</b>;
+              </li>
+              <li>
+                um Esquema(Schema) raramente muda durante a vida do BD;
+              </li>
+              <li>
+                Trata-se da organização dos dados em um plano que mostra como o banco é construído;
+              </li>
+              <li>
+                O esquema define: tabelas, campos, relacionamentos, visões, funções e muitos outros elementos que compõem o BD;
+              </li>
+            </ul>
+          </div>
+          <h5 class="card-title mt-3">Etapas de desenvolvimento de um BD</h5>
+          <div class="ml-3">
+            <div class="card-text">
+              As principais etapas no desenvolvimento de um BD são:
+            </div>
+            <ol>
+              <li>
+                Especificação e Análise de Requisitos
+                <ol>
+                  <li type="a">Os Requisitos são documentados</li>
+                </ol>
+              </li>
+              <li>
+                Projeto Conceitual
+                <ol>
+                  <li type="a">Baseado nos Requisitos</li>
+                </ol>
+              </li>
+              <li>
+                Projeto Lógico
+                <ol>
+                  <li type="a">Expresso em um modelo de dados, como o relacional</li>
+                </ol>
+              </li>
+              <li>
+                Projeto Físico
+                <ol>
+                  <li type="a">Especificações para armazenar e acessar o banco de dados</li>
+                  <li type="a">Implementação do BD, inserção de dados reais e manutenção</li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+            <a href="https://images.app.goo.gl/j3hUkGBS6pfdasUM8" class="btn btn-primary" target="_blank">Exemplo</a>
+          </div>
+        </div>
+      <!--FIM CARD-->
+      <!--INÍCIO CARD-->
         <div class="card mt-3">
             <div class="card-header">
-              Modelo Entidade-Relacionamento
+              <a target="_blank" href="https://youtu.be/W2Z1STnjNJo">Modelo Entidade-Relacionamento</a>
             </div>
             <div class="card-body">
-              <h5 class="card-title">...</h5>
-              <p class="card-text">...</p>
+              <h5 class="card-title">O que é? e Qual seu propósito?</h5>
+              <p class="card-text">
+                Também conhecido como MER, trata-se de um modelo conceitual usado para descrever objetos envolvidos no domínio de um sistema a ser construído, incluíndo seus atributos e relacionamentos.
+              </p>
+              <p class="card-text">
+                O MER permite representar de forma abstrata a estrutura que irá constituir o banco de dados.
+              </p>
+              <p class="card-text">
+                É composto pelos seguintes objetos:
+              </p>
+              <ul>
+                <li>
+                  Entidades
+                </li>
+                <li>
+                  Atributos
+                </li>
+                <li>
+                  Relacionamentos
+                </li>
+              </ul>
+              <p class="card-text">
+                O primeiro passo para construir um banco de dados é fazer o modelo conceitual, e para isso podemos usar o Modelo Entidade-Relacionamento.
+              </p>
+              <p class="card-text">
+                O modelo em si é o MER, mas cria-se um diagrama para que represente o modelo graficamente este chama-se DER. ou seja, um modelo é uma ideia, conceitual e abstrata, já o diagrama é a representação gráfica destas ideias.
+              </p>
+              <p class="card-text">
+                Um modelo entidade-relacionamento é uma maneira sistemática de descrever e definir um processo de negócio.
+              </p>
+              <p class="card-text">
+                O processo é modelado como componentes(entidades) que são ligadas umas às outras por relacionamentos que indicam as dependências entre elas.
+              </p>
+              <p class="card-text">
+                As entidades podem ter várias propriedades(atributos) que as caracterizam.
+              </p>
+              <p class="card-text">
+                Há várias formas para se criar os diagrams, aqui usaremos o <b>padrão de Peter Chen</b> onde:
+              </p>
+              <ul>
+                <li>
+                  Retângulos - Representam entidades;
+                </li>
+                <li>
+                  Elipses - Representam atributos;
+                </li>
+                <li>
+                  Losangos - Representam relacionamentos;
+                </li>
+                <li>
+                  Linhas - Ligam atributos a entidades e entidades a relacionamentos;
+                </li>
+              </ul>
               <a href="https://images.app.goo.gl/2TuP4mVh7JTN6m6V8" class="btn btn-primary" target="_blank">Exemplo</a>
             </div>
           </div>
-
+      <!--FIM CARD-->
+      <!--INÍCIO CARD-->
         <div class="card mt-3">
             <div class="card-header">
-              Entidades
+              <a target="_blank" href="https://youtu.be/poeUGQl52YI">Entidades</a>
             </div>
             <div class="card-body">
               <h5 class="card-title">O que são entidades?</h5>
               <ul>
-                  <li>Algo de importância para um usuário ou organização que precisa ser representado em um banco de dados.</li>
-                  <li>Representa um tema, um tópico ou conceito do negócio.</li>
-                  <li>Uma entidade pode ter existência física ou abstrata.</li>
+                  <li>
+                    Algo de importância para um usuário ou organização que precisa ser representado em um banco de dados.
+                  </li>
+                  <li>
+                    Representa um tema, um tópico ou conceito do negócio.
+                  </li>
+                  <li>
+                    Uma entidade pode ter existência física ou abstrata.
+                  </li>
               </ul>
               <p class="card-text">Ex.: Empregados, Livros, Vendas, Produtos.</p>
               <a href="https://images.app.goo.gl/jZge6iGM17zQsLzV6" class="btn btn-primary" target="_blank">Exemplo</a>
             </div>
           </div>
+      <!--FIM CARD-->
 
+
+          <div class="mb-5"></div>
     </div>
 
 
