@@ -649,6 +649,89 @@
       </div>
     </div>
   <!--FIM CARD-->
+  <!--INÍCIO CARD-->
+  <div class="card mt-3">
+    <div class="card-header">
+      <a target="_blank" href="https://youtu.be/KSw0rTGEwPI">Relacionamentos</a>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">O que são Relacionamentos?</h5>
+      <div class="ml-3">
+        <div class="card-text">
+          Os relacionamentos são associações entre tabelas que são criadas usando instruções de junção para recuperar dados...
+        </div>
+      </div>
+      <div class="ml-3">
+        <ul>
+          <li>
+            As Entidades podem ser conectadas entre si por meio de relacionamentos. <br>
+            Trata-se de uma estrutura que indica a associação de elementos de uma ou mais Entidades;
+          </li>
+        </ul>
+      </div>
+      <h5 class="card-title mt-2">Porque precisamos de relacionamentos?</h5>
+      <div class="ml-3">
+        <ul>
+          <li>
+            Como os dados de diferentes entiddes são armazenados em tabelas distintas, geralmente precisamos combinar duas ou mais tabelas para responder às perguntas específicas dos usuários;
+          </li>
+          <li>
+            Por exemplo, podemos querer saber quais produtos, e em qual quantidade, forma adquiridos por um cliente em particular. Precisaremos então de dados das tabelas de clientes e produtos pra saber essa informação;
+          </li>
+        </ul>
+      </div>
+      <h5 class="card-title mt-2">Representando Relacionamentos</h5>
+      <div class="ml-3">
+        <div class="card-text">
+          Representamos um Relacionamento em um DER por meio de um Losango que conecta uma ou mais Entidade.
+        </div>
+      </div>
+      <h5 class="card-title mt-2">Grau de um Relacionamento</h5>
+      <div class="ml-3">
+        <div class="card-text">
+          O grau de um relacionamento define o número de entidades que participam do relacionamento. Assim, um relacionamento pode ser:
+        </div>
+        <ul>
+          <li>
+            <b>Unário: </b>Também conhecido como Recursivo, este é um relacionamento da Entidade com ela própria. <br>
+            Ex.: Pessoa-[se casa]-Pessoa.
+          </li>
+          <li>
+            <b>Binário: </b>Relacionamento entre duas entidades. <br>
+            Ex.: Funcionário-[trabalha]-setor.
+          </li>
+          <li>
+            <b>Ternário: </b>É aquele que ocorre entre três entidades. <br>
+            Ex.: médico-[prescreve]-medicamento assim como médico[prescreve]-paciente.
+          </li>
+        </ul>
+        Obs.: Os relacionamentos mais comuns são os de Grau Binário.
+      </div>
+      <h5 class="card-title mt-2">Relacionento entre Tabelas</h5>
+      <div class="ml-3">
+        <div class="card-text">
+          Uma tabela é relacionada com outras tabelas. Por exemplo, um produto é vendido em uma loja. <br>
+          O grau de relacionamento indica a quantidade de entidades envolvidas no relacionamento, como neste exemplo é um relacionamento binário.
+        </div>
+      </div>
+      <h5 class="card-title mt-2">Efetuando relacionamento entre múltiplas tabelas</h5>
+      <div class="ml-3">
+        <ul>
+          <li>
+            Cada linha de dados em uma tabela deve ser identificada de forma única usando-se uma <b>Chave Primária</b> (identificador exclusivo).
+          </li>
+          <li>
+            Usamos uma <b>Chave Estrangeira</b> para relacionar os dados entre múltiplas tabelas.
+          </li>
+          <li>
+            Usamos para isso o relacionamento entre chave primária de uma tabela com a chave estrangeira de outra tabela.
+          </li>
+        </ul>
+      </div>
+      <a href="https://images.app.goo.gl/SBm53BHWHhodKJvX9" class="btn btn-primary mt-2" target="_blank">Exemplo</a>
+    </div>
+  </div>
+  <!--FIM CARD-->
 
 
 
