@@ -506,6 +506,93 @@
           </div>
       <!--FIM CARD-->
 
+      <!--INÍCIO CARD-->
+      <div class="card mt-3">
+        <div class="card-header">
+          <a target="_blank" href="https://youtu.be/59TZc_vRpcQ">Atributos</a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">O que são tributos?</h5>
+          <div class="ml-3">
+            <ul>
+              <li>
+                Os atributos descrevem características de um entidade, como por exemplo: fabricante, modelo, cor, placa, etc.
+              </li>
+              <li>
+                Os atributos possuem um tipo de (domínio), nome e valor específico.
+              </li>
+            </ul>
+          </div>
+          <h5 class="card-title mt-2">Representando Atributos</h5>
+          <div class="ml-3">
+            <ul>
+              <li>
+                os atributos podem ser representados por uma elipse contendo seu nome, ligada à entidade que qualifica.
+              </li>
+              <li>
+                Opscionalmente, podemos representar um atributo apenas pelo seu nome, ligado à entidade, sem utilizar a elipse.
+              </li>
+            </ul>
+          </div>
+          <h5 class="card-title mt-2">Tipos de Atributos</h5>
+          <div class="ml-3">
+            <div class="card-text">
+              Os atributos podem ser de vários tipos, tais como:
+            </div>
+            <ul>
+              <li>
+                <b>Simples:</b> Não possuem características especiais, e são indivisíveis. <br>
+                Ex.: Nome da Empresa, CPF, CNPJ, etc.
+              </li>
+              <li>  
+                <b>Composto:</b> É formado por itens menores; podem ser subdividido em outros atributos.<br>
+                Ex.: Endereço da Empresa, etc. <br>
+                <b>Obs.:</b> O ideal é ser decomposto em atributos simples, para que desta forma as consultas possam ser facilitadas.
+              </li>
+              <li>
+                <b>Multivalorado:</b> Pode ter mais de um valor para o mesmo registro (informação). <br>
+                Ex.: Telefone da empresa (pode-se criar apenas uma coluna, ou decompor, depende da análise).(sua representação é com asterístico no início, para identificação visual).
+              </li>
+              <li>
+                <b>Determinante:</b>Define de forma única as Instâncias de uma entidade. <br>
+                Ex.: CNPJ da empresa, Código do produto, etc. <br>
+                <b>Obs.:</b> Não podem existir duas instâncias com o mesmo valor nesse atributo. (sua representação é sublinhada, para identificação visual).
+              </li>
+              <li>
+                <b>Identificador: ("Chaves")</b> Uma chave identifica uma instância específica na classe de entidade. <br>
+                Ex.: CPF, CódigoProduto, Matrícula, ID_Setor.
+                <ul>
+                  <li>
+                    As Chaves podem ser únicas ou não-únicas:
+                    <ul>
+                      <li>
+                        <b>Únicas:</b> O valor dos dados da chave é único na entidade. <br>
+                        Ex.: CPF.
+                      </li>
+                      <li>
+                        <b>Não-únicas:</b> Usadas para agrupar instâncias de classe em categorias. <br>
+                        Ex.: Chave estrangeira.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    As Chaves podem ser compostas, consistindo de dois ou mais atributos combinados. <br>
+                    Ex.: Uso de dois atributos para formar a chave.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Entre outros.</b>
+              </li>
+            </ul>
+          </div>
+
+          
+          <a href="https://images.app.goo.gl/h1Uhs8HUyoWnugMh7" class="btn btn-primary" target="_blank">Exemplo</a>
+        </div>
+      </div>
+  <!--FIM CARD-->
+
 
           <div class="mb-5"></div>
     </div>
