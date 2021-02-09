@@ -732,6 +732,128 @@
     </div>
   </div>
   <!--FIM CARD-->
+  <!--INICIO CARD-->
+    <div class="card mt-3">
+      <div class="card-header">
+        <a target="_blank" href="https://youtu.be/sbIT5UXTEg8">Chave Primária, Estrangeira e outras</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">O que são Chaves?</h5>
+        <div class="ml-3">
+          <div class="card-text">
+            Uma chave consiste em uma ou mais colunas de uma relação cujos valores são usados para identificar de forma exclusiva uma linha ou conjunto de linha. <br>
+            Pode ser <b>Única</b> quando identifica uma única linha ou <b>Não-única</b> quando identifica um conjunto de linhas. <br>
+            <ul>
+              <li>
+                <b>Únicas (Unique):</b>
+                <ul>
+                  <li>
+                    <b>Candidata: </b>
+                    <ul>
+                      <li>
+                        Atributo ou grupo de atributos com o potencial para se tornarem uma chave primária.
+                      </li>
+                      <li>
+                        Uma chave candidata que não seja usada como chave primária será conhecida como <b>Chave Alternativa</b>.
+                      </li>
+                    </ul>
+                    Ex.: Campos núméricos como matrícula, CPFem uma tabela de registro de alunos.
+                  </li>
+                  <li>
+                    <b>Composta: </b>
+                    <ul>
+                      <li>
+                        Chave Composta de dois ou mais atributos (colunas).
+                      </li>
+                      <li>
+                        Geralmente empregada quando não é possível utilizar uma única coluna de uma tabela para identificar de forma exclusiva seus registros.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Primária: </b>
+                    <ul>
+                      <li>
+                        Chave candidata escolhida para ser a <b>chave principal</b> na relação.
+                      </li>
+                      <li>
+                        Identifica de forma <b>Exclusiva</b> os registros em uma tabela, não podendo ter repetição de valores nem rampouco valor nulo.
+                      </li>
+                      <li>  
+                        Primary Key / PK
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Surrogada: </b>
+                    <ul>
+                      <li>
+                        Valor numérico, único, adicionado a uma relação para servir com chave primária.
+                      </li>
+                      <li>
+                        Não possui significado para os usuários e geralmente dica escondida nas aplicações.
+                      </li>
+                      <li>
+                        As chaves substitutas são frequentemente usadas no lugar de uma chave primária composta.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>Não-únicas (Non-Unique):</b> 
+                <ul>
+                  <li>
+                    <b>Estrangeira: </b>
+                    <ul>
+                      <li>
+                        Coluna de uma tabela que estabelece um <b>Relacionamento com a Chave Primária(PK) de outra tabela</b>.
+                      </li>
+                      <li>
+                        É a partir da chave estrangeira (Foreing key / FK) que sabemos com qual registro em outra tabela um registro está relacionado.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <h5 class="card-title mt-2">Instruções para criação de chaves primárias e estrangeiras</h5>
+          <div class="ml-3">
+            <ul>
+              <li>
+                Não é possível haver valores duplicados em uma chave primária.
+              </li>
+              <li>
+                No geral, não é possível alterar o valor de uma chave primária.
+              </li>
+              <li>
+                Chaves estrangeiras são baseadas em valores de dados, classificadas como ponteiros lógicos.
+              </li>
+              <li>
+                Um valor de uma chave estrangeira deve corresponder a um valor existene em uma chave primária associada (ou valor de chave única). Caso contrário, deve ser nulo.
+              </li>
+              <li>
+                Uma chave estrangeira deve referenciar uma chave primária ou uma coluna de chave única.
+              </li>
+            </ul>
+          </div>
+          <h5 class="card-title mt-2">O conceito de Domínio</h5>
+          <ml-3>
+            <ul>
+              <li>
+                Definir tipos de dados (ver no exemplo);
+              </li>
+              <li>
+                Especificar valores válidos em um campo;
+              </li>
+            </ul>
+          </ml-3>
+          <a href="https://images.app.goo.gl/1EhdNSu5aa8jZ3EHA" class="btn btn-primary mt-2" target="_blank">Exemplo</a>
+        </div>
+      </div>
+    </div>
+  <!--FIM CARD-->
 
 
 
