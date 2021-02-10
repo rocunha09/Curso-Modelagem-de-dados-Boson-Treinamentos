@@ -854,7 +854,85 @@
       </div>
     </div>
   <!--FIM CARD-->
-
+  <!--INICIO CARD-->
+    <div class="card">
+      <div class="card-header">
+        <a href="https://youtu.be/OVBFFe4-jSM" target="_blank">Cardinalidades</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">O que são?</h5>
+        <div class="ml-3">
+          <div class="card-text">
+            A cardinalidade dis respeito ao número de itens que se relacionam nas entidades.
+          </div>
+          <div class="card-text">
+            As cardinalidades podem ser máxima ou mínima, significando respectivamente os números mínimo e máximo de instâncias de cada entidade associadas no relacionamento.
+          </div>
+          <div class="card-text">
+            <b>Cardinalidade máxima: </b> Trata-se do número máximo de instâncias de entidade que podem participar em um relacionamento. Pode ser 1 ou N(muitos).
+          </div>
+          <div class="card-text">
+            <b>Cardinalidade mínima: </b>Número mínimo de instâncias de entidade que <u>devem</u> obrigatoriamente participar em um relacionamento; Zero é a participação opcional e um é obrigatória.
+          </div>
+        </div>
+        <h5 class="card-title mt-2">Simbologia para cardinalidades</h5>
+        <div class="ml-3">
+          <div class="card-text">
+            Utilizando a notação de Peter Chen pode-se usr: (1,1) (um para um) por exemplo. sobre a linha que conecta o relacionamento e a entidade no diagrama.
+          </div>
+          <div class="card-text">
+            Notação pé de galinha é outra forma de representar, modificando as estremidades da linha que liga as entidades no relacionamento (ver exemplo).
+            <ul>
+              <li>O <b>traço</b> indica: um (1);</li>
+              <li>O <b>círculo</b> indica: zero(0)</li>
+              <li>O <b>"garfo"</b> indica: muitos(*)</li>
+            </ul>
+            <div class="card-text">
+              Ex.:  <br> 
+              Cardinalidade mínima: <b>um</b> cliente para <b>uma</b> encomenda. <br>
+              Cardinalidade máxima: <b>um</b> cliente para <b>muitas</b> encomendas.
+            </div>
+          </div>
+        </div>
+        <h5 class="card-title mt-2">Relacionamento Binário um-para-um</h5>
+        <div class="ml-3">
+          <div class="card-text">
+            <b>1:1</b> <br>
+            Uma instância de entidade única em uma entidade está relacionada com uma instância de entidade única de outras entidades. <br>
+            Ex.: 1 professor usa 1 armário, 1 armário é utilizado por apenas 1 professor...
+          </div>
+        </div>
+        <h5 class="card-title mt-2">Relacionamento Binário um-para-muitos</h5>
+        <div class="ml-3">
+          <div class="card-text">
+            <b>1:N</b> <br>
+            Uma instância de entidade única em uma classe de entidade está relacionada a muitas instâncias de entidade em outra classe de entidade. <br>
+            Ex.: 1 funcionário trabalha em 1 departamento na empresa, em 1 departamento N funcionários trabalham.
+          </div>
+        </div>
+        <h5 class="card-title mt-2">Relacionamento Binário muitos-para-muitos</h5>
+        <div class="ml-3">
+          <div class="card-text">
+            <b>N:M</b> <br>
+            Muitas Instâncias em uma entidade são relacionadas a  muitas instâncias de entidade em outra entidade. <br>
+            Ex.: N clientes compram M pacotes, N pacotes podem ser comprados por M clientes.
+          </div>
+        </div>
+        <h5 class="card-title mt-2">Desmembrando Relacionamento Muitos-para-muitos</h5>
+        <div class="ml-3 mb-3">
+          <div class="card-text">
+            Sempre que tiver um relacionamento N para N será necessário criar uma nova entidade para se relacionae torando o relacionamento 1:N ou 1:N, desta forma simplifica a implementação. <br>
+            Ex.: <br>
+            N clientes <b>adquire</b> N pacotes, passa a ser: <br>
+            1 cliente <b>compôe</b> N cliente_pacotes. <br>
+            1 pacote <b>compôe</b> 1 cliente_pacote.
+          </div>
+        </div>
+        <a href="https://images.app.goo.gl/zFoXXZUEpDicR2Ft5" target="_blank" class="btn btn-primary ">Exemplo</a>
+        </div>
+      </div>
+    </div>
+  <!--FIM CARD-->  
 
 
           <div class="mb-5"></div>
