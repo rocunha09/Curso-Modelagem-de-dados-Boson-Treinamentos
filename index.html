@@ -1232,6 +1232,90 @@
             </div>
           </div>
         <!--FIM CARD-->
+        <!--INICIO CARD-->
+          <div class="card mt-3">
+            <div class="card-header">
+              <a href="https://youtu.be/NpG1Xt8LB_c" target="_blank" >Normalização e Anomalias</a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Conceitos</h5>
+              <div class="ml-3">
+                <ul>
+                  <li>
+                    Anomalias são problemas que ocorrem em bancos de dados mal planejados e não-normalizados, geralmente ocorrendo por excesso de dados armazenados em uma mesma tabela.
+                  </li>
+                  <li>
+                    São causadas pelas dependências parciais e transitivas.
+                  </li>
+                  <li>
+                    As anomalias de atualização são classificadas em:
+                    <ul>
+                      <li>
+                        <b>Anomalias de inserção: </b> Não deve ser possível adicionar um dado a não ser que outro dado esteja disponível. <br>
+                        Por exemplo: não deve ser permitido cadastrar um novo livro sem que um autor já esteja cadastrado.
+                      </li>
+                      <li>
+                        <b>Anomalia de exclusão: </b>Ao exluirmos um registro, dados referentes em outra tabela são excluídos. <br>
+                        Por exemplo, se excluirmos um autor, os livros desse autor devem ser excluídos também.
+                      </li>
+                      <li>
+                        <b>Anomalia de modificação: </b>Ao alterar um dado em uma tabela, dados em outras tabelas precisam ser alterados. <br>
+                        Por exemplo, se o código de um autor for modificado, esse código deve ser modificado na tabela de autores e na de livros também, para manter o relacionamento entre livros e seus autores corretos.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+                <h5 class="card-title mt-3">Eliminar anomalias</h5>
+                  <div class="ml-3">
+                    <div class="card-text">
+                      Projetar os esquemas de relações (tabelas) no banco de dados de modo que nenhuma anomalia de inserção, esclusão ou modificação esteja presente nas relações. Para isso usamos o processo de <b>Normalização</b>.
+                    </div>
+                  </div>
+                <h5 class="card-title mt-3">Normalização</h5>
+                <div class="ml3">
+                  <div class="card-text">
+                    Normalização consiste em um processo de análise de uma relação para assegurar que seja bem formada.
+                  </div>
+                  <div class="card-text">
+                    Decompor relações com anomalias para produzir relações menores e bem-estruturadas. Ou seja, em uma relação normalizada podemos inserir, excluir ou modificar registros sem criar anomalias.
+                  </div>
+                  <ul>
+                    <li>
+                      O procesos de normalização, proposto por Codd em 1972, aplica a um esquema de relação uma série de testes para certificar que ele satisfaça uma <b>Forma Normal (FN)</b>.
+                    </li>
+                    <li>
+                      Codd propês originalmente 3 formas normais: 1º, 2º, e 3º FNs.
+                    </li>
+                    <li>
+                      Posteriormente, a 3º FN foi revisada e uma definição mais robusta foi proposta por Boyce e Codd, denominada Forma Normal de Boyce-Codd (FNBC).
+                    </li>
+                  </ul>
+                </div>
+                <h5 class="card-title mt-3">Objetivos da Normalização</h5>
+                <div class="ml-3">
+                  <div class="card-text">
+                    Analizar esquemas de relação (tabelas) com base em suas dependências funcionais e chaves primárias para:
+                    <ol>
+                      <li>Minimizar redundâncias.</li>
+                      <li>Minimizar anomalias de inserção, exclusão e modificação.</li>
+                    </ol>
+                  </div>
+                  <div class="card-text">
+                    As relações são decompostas em esquemas de relação menores que atendem aos testes de forma normal.
+                  </div>
+                  <div class="card-text">
+                    O ideal é que o projeto do banco de dados relacional alcance a FNBC ou a 3º FN para cada tabela.
+                  </div>
+                  <div class="card-text">
+                    Não é adequado normalizar apenas até a 1º FN ou à 2º FN, pos na verdade essas formas normais são usadas para se chegar à 3º FN ou FNBC.
+                  </div>
+                </div>
+              <a href="https://images.app.goo.gl/rPudZ1KX78cJkAXQ9" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
+            </div>
+          </div>
+        <!--FIM CARD-->
+
         
   
 
