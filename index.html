@@ -1423,6 +1423,59 @@
           </div>
         </div>
       <!--FIM CARD-->
+      <!--INICIO CARD-->
+        <div class="card mt-3">
+          <div class="card-header">
+            <a href="https://youtu.be/usA8QKvEHWw" target="_blank">Normalização - Terceira Forma Normal</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Terceira Forma Normal</h5>
+            <div class="ml-3">
+              <ul>
+                <li>
+                  Baseada no conceito de <b>Dependência Transitiva</b>;
+                </li>
+                <li>
+                  A relação não deve ter um atributo não-chave determinado funcionalmente por outro atributo não-chave(ou conjunto);
+                </li>
+                <li>
+                  Não deve haver dependência transitiva de um atributo não-chave sobre a <b>PK</b>;
+                </li>
+                <li>
+                  Deve-se decompor e montar uma nova relação que inclua os atributos não-chave que determinam funcionalmente outros atributos não-chave.
+                </li>
+              </ul>
+            </div>
+            <h5 class="card-title mt-3">Uma tabela está na Terceira Forma Normal se:</h5>
+            <div class="ml-3">
+              <ul>
+                <li>
+                  Estiver na <b>2FN</b>;
+                </li>
+                <li>
+                  Não existem <b>dependências transitivas</b>;
+                </li>
+                <li>
+                  Uma tabela está na Terceira Forma Normal se ela estiver na segunda forma normal e se nenhuma coluna não-chave depender de outra coluna não-chave.
+                </li>
+                <li>
+                  <i>Uma dependência transitiva em uma tabela é uma dependência funcional entre dois ou mais atributos não-chave</i>;
+                </li>
+              </ul>
+              <div class="card-text mb-2">
+                Para cada atributo(ou grupo) não-chave que for um determinante na relação, crie uma nova tabela;
+              </div>
+              <div class="card-text mb-2">
+                Esse atributo será a <b>PK</b> na nova relação;
+              </div>
+              <div class="card-text">
+                O atributo(PK na nova relação) fica também na tabela original, e servirá como uma chave estrangeira para associar as duas relações.
+              </div>
+            </div>
+            <a href="https://images.app.goo.gl/rejvasTSyC3Jdqxn7" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
+          </div>
+        </div>
+      <!--FIM CARD-->
         
   
 
