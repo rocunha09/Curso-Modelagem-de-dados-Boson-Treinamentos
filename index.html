@@ -1476,6 +1476,86 @@
           </div>
         </div>
       <!--FIM CARD-->
+      <!--INICIO CARD-->
+      <div class="card mt-3">
+        <div class="card-header">
+          <a href="https://youtu.be/o6mSiTO-vak" target="_blank">Normalização - Forma Normal de Boyce-Codd</a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Forma Normal de Boyce-Codd</h5>
+          <div class="ml-3">
+            <div class="card-text mb-2">
+              A definição original da <b>3FN</b> de Codd não lidava adequadamente com uma relação que:
+            </div>
+            <ul>
+              <li>
+                Tivesse duas ou mais chaves candidatas;
+              </li>
+              <li>
+                Essas chaves candidatas fossem compostas;
+              </li>
+              <li>
+                Elas tivessem superposição (Atributos em comum).
+              </li>
+            </ul>
+            <div class="card-text mb-2">
+              Caso a combinação das condições acima não ocorra em uma tabela, basta aplicar a <b>3FN</b>.
+            </div>
+            <div class="card-text mb-2">
+              Uma relação está em <b>FNBC</b> se e somente se os únicos determinantes são chaves candidatas.
+            </div>
+          </div>
+          <h5 class="card-title mt-3">Uma tabela está na forma normal de Boyce-Codd quando:</h5>
+          <div class="ml-3">
+            <ul>
+              <li>
+                Cada relação na <b>FNBC</b> também está na <b>3FN</b>, mas uma relação na <b>3FN</b> não está necessáriamente na <b>FNBC</b>(a maioria está).
+              </li>
+              <li>
+                Quando uma tabela possui mais de uma chave candidata, podem ocorrer anomalias.
+              </li>
+              <li>
+                Na <b>FNBC</b> as chaves candidatas não possuem dependências parciais por outros atributos;
+              </li>
+              <li>
+                Uma relação <b>R</b> está na <b>FNBC</b> sempre que uma dependência funcional não-trivial <b>X</b>-><b>A</b> se mantiver em <b>R</b>, assim <b>X</b> é uma superchave de <b>R</b>.
+              </li>
+            </ul>
+          </div>
+          <h5 class="card-title mt-3">FNBC - Pontos a considerar</h5>
+          <div class="ml-3">
+            <div class="card-title mb-2">
+              <b>Determinante:</b> "Lado esquerdo" de uma <b>DF</b>, como o <b>X</b> em <b>X</b>-><b>Y</b> (<b>Y</b> é "dependente"); <b>X</b> <i>determina funcionalmente</i> <b>Y</b>.
+            </div>
+            <div class="card-text mb-2">
+              <b>Dependência Funcional Trivial:</b> Dependência que não pode deixar de ser satisfeita. Uma <b>DF</b> é trivial se o lado direito da expressão é um subconjunto do lado esquerdo. <br>
+              <b>A</b>-><b>B</b> é uma <b>DF</b> trivial se <b>B</b> for um subconjunto de <b>A</b>.
+            </div>
+            <div class="card-text mb-2">
+              <b>Exemplo:</b> <b>{ID_Func, Nome_Func}-> ID_Func</b> é uma <b>DF</b> trivial pois <b>ID_Func</b> é um subconjunto de <b>{ID_Funk, Nome_Func}</b>.
+            </div>
+          </div>
+          <h5 class="card-title mt-3">FNBC - Normalizando</h5>
+          <div class="ml-3">
+            <div class="card-text mb-2">
+              Para normalizar uma tabela até a <b>FNBC</b> devemos decompor a tabela com os passos a seguir:
+            </div>
+            <ul>
+              <li>
+                Encontrar uma dependência funcional não-trivial <b>X</b>-><b>Y</b> que viole a condição de <b>FNBC</b>. <b>X</b> não deve ser uma superchave.
+              </li>
+              <li>
+                Dividir a tabela em duas: Uma com os atributos <b>XY</b>, ou seja, todos os atrivutos da dependência;
+              </li>
+              <li>
+                Outra com os atributos <b>X</b> juntamente com os atributos restantes da tabela original;
+              </li>
+            </ul>
+          </div>
+          <a href="https://images.app.goo.gl/qLMKJ52Bfru2bHV2A" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
+        </div>
+      </div>
+      <!--FIM CARD-->
         
   
 
