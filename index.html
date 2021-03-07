@@ -505,89 +505,89 @@
             </div>
         </div>
       <!--FIM CARD-->
-        <!--INÍCIO CARD-->
-        <div class="card mt-3">
-          <div class="card-header">
-            <a target="_blank" href="https://youtu.be/59TZc_vRpcQ">Atributos</a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">O que são tributos?</h5>
-            <div class="ml-3">
-              <ul>
-                <li>
-                  Os atributos descrevem características de um entidade, como por exemplo: fabricante, modelo, cor, placa, etc.
-                </li>
-                <li>
-                  Os atributos possuem um tipo de (domínio), nome e valor específico.
-                </li>
-              </ul>
+      <!--INÍCIO CARD-->
+          <div class="card mt-3">
+            <div class="card-header">
+              <a target="_blank" href="https://youtu.be/59TZc_vRpcQ">Atributos</a>
             </div>
-            <h5 class="card-title mt-2">Representando Atributos</h5>
-            <div class="ml-3">
-              <ul>
-                <li>
-                  os atributos podem ser representados por uma elipse contendo seu nome, ligada à entidade que qualifica.
-                </li>
-                <li>
-                  Opscionalmente, podemos representar um atributo apenas pelo seu nome, ligado à entidade, sem utilizar a elipse.
-                </li>
-              </ul>
-            </div>
-            <h5 class="card-title mt-2">Tipos de Atributos</h5>
-            <div class="ml-3">
-              <div class="card-text">
-                Os atributos podem ser de vários tipos, tais como:
+            <div class="card-body">
+              <h5 class="card-title">O que são tributos?</h5>
+              <div class="ml-3">
+                <ul>
+                  <li>
+                    Os atributos descrevem características de um entidade, como por exemplo: fabricante, modelo, cor, placa, etc.
+                  </li>
+                  <li>
+                    Os atributos possuem um tipo de (domínio), nome e valor específico.
+                  </li>
+                </ul>
               </div>
-              <ul>
-                <li>
-                  <b>Simples:</b> Não possuem características especiais, e são indivisíveis. <br>
-                  Ex.: Nome da Empresa, CPF, CNPJ, etc.
-                </li>
-                <li>  
-                  <b>Composto:</b> É formado por itens menores; podem ser subdividido em outros atributos.<br>
-                  Ex.: Endereço da Empresa, etc. <br>
-                  <b>Obs.:</b> O ideal é ser decomposto em atributos simples, para que desta forma as consultas possam ser facilitadas.
-                </li>
-                <li>
-                  <b>Multivalorado:</b> Pode ter mais de um valor para o mesmo registro (informação). <br>
-                  Ex.: Telefone da empresa (pode-se criar apenas uma coluna, ou decompor, depende da análise).(sua representação é com asterístico no início, para identificação visual).
-                </li>
-                <li>
-                  <b>Determinante:</b>Define de forma única as Instâncias de uma entidade. <br>
-                  Ex.: CNPJ da empresa, Código do produto, etc. <br>
-                  <b>Obs.:</b> Não podem existir duas instâncias com o mesmo valor nesse atributo. (sua representação é sublinhada, para identificação visual).
-                </li>
-                <li>
-                  <b>Identificador: ("Chaves")</b> Uma chave identifica uma instância específica na classe de entidade. <br>
-                  Ex.: CPF, CódigoProduto, Matrícula, ID_Setor.
-                  <ul>
-                    <li>
-                      As Chaves podem ser únicas ou não-únicas:
-                      <ul>
-                        <li>
-                          <b>Únicas:</b> O valor dos dados da chave é único na entidade. <br>
-                          Ex.: CPF.
-                        </li>
-                        <li>
-                          <b>Não-únicas:</b> Usadas para agrupar instâncias de classe em categorias. <br>
-                          Ex.: Chave estrangeira.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      As Chaves podem ser compostas, consistindo de dois ou mais atributos combinados. <br>
-                      Ex.: Uso de dois atributos para formar a chave.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <b>Entre outros.</b>
-                </li>
-              </ul>
+              <h5 class="card-title mt-2">Representando Atributos</h5>
+              <div class="ml-3">
+                <ul>
+                  <li>
+                    os atributos podem ser representados por uma elipse contendo seu nome, ligada à entidade que qualifica.
+                  </li>
+                  <li>
+                    Opscionalmente, podemos representar um atributo apenas pelo seu nome, ligado à entidade, sem utilizar a elipse.
+                  </li>
+                </ul>
+              </div>
+              <h5 class="card-title mt-2">Tipos de Atributos</h5>
+              <div class="ml-3">
+                <div class="card-text">
+                  Os atributos podem ser de vários tipos, tais como:
+                </div>
+                <ul>
+                  <li>
+                    <b>Simples:</b> Não possuem características especiais, e são indivisíveis. <br>
+                    Ex.: Nome da Empresa, CPF, CNPJ, etc.
+                  </li>
+                  <li>  
+                    <b>Composto:</b> É formado por itens menores; podem ser subdividido em outros atributos.<br>
+                    Ex.: Endereço da Empresa, etc. <br>
+                    <b>Obs.:</b> O ideal é ser decomposto em atributos simples, para que desta forma as consultas possam ser facilitadas.
+                  </li>
+                  <li>
+                    <b>Multivalorado:</b> Pode ter mais de um valor para o mesmo registro (informação). <br>
+                    Ex.: Telefone da empresa (pode-se criar apenas uma coluna, ou decompor, depende da análise).(sua representação é com asterístico no início, para identificação visual).
+                  </li>
+                  <li>
+                    <b>Determinante:</b>Define de forma única as Instâncias de uma entidade. <br>
+                    Ex.: CNPJ da empresa, Código do produto, etc. <br>
+                    <b>Obs.:</b> Não podem existir duas instâncias com o mesmo valor nesse atributo. (sua representação é sublinhada, para identificação visual).
+                  </li>
+                  <li>
+                    <b>Identificador: ("Chaves")</b> Uma chave identifica uma instância específica na classe de entidade. <br>
+                    Ex.: CPF, CódigoProduto, Matrícula, ID_Setor.
+                    <ul>
+                      <li>
+                        As Chaves podem ser únicas ou não-únicas:
+                        <ul>
+                          <li>
+                            <b>Únicas:</b> O valor dos dados da chave é único na entidade. <br>
+                            Ex.: CPF.
+                          </li>
+                          <li>
+                            <b>Não-únicas:</b> Usadas para agrupar instâncias de classe em categorias. <br>
+                            Ex.: Chave estrangeira.
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        As Chaves podem ser compostas, consistindo de dois ou mais atributos combinados. <br>
+                        Ex.: Uso de dois atributos para formar a chave.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Entre outros.</b>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://images.app.goo.gl/h1Uhs8HUyoWnugMh7" class="btn btn-primary" target="_blank">Exemplo</a>
             </div>
-            <a href="https://images.app.goo.gl/h1Uhs8HUyoWnugMh7" class="btn btn-primary" target="_blank">Exemplo</a>
           </div>
-        </div>
       <!--FIM CARD-->
       <!--INÍCIO CARD-->
         <div class="card mt-3">
@@ -1164,8 +1164,8 @@
             <a href="https://images.app.goo.gl/bVpkJKmZqyWqY46N9" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
           </div>
         </div>
-        <!--FIM CARD-->
-        <!--INICIO CARD-->
+      <!--FIM CARD-->
+      <!--INICIO CARD-->
           <div class="card mt-3">
             <div class="card-header">
               <a href="https://youtu.be/koe4GVN_83M" target="_blank">Dependências</a>
@@ -1231,8 +1231,8 @@
               <a href="https://images.app.goo.gl/TYwrzEhMdoTqyVQQ8" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
             </div>
           </div>
-        <!--FIM CARD-->
-        <!--INICIO CARD-->
+      <!--FIM CARD-->
+      <!--INICIO CARD-->
           <div class="card mt-3">
             <div class="card-header">
               <a href="https://youtu.be/NpG1Xt8LB_c" target="_blank" >Normalização e Anomalias</a>
@@ -1314,8 +1314,8 @@
               <a href="https://images.app.goo.gl/rPudZ1KX78cJkAXQ9" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
             </div>
           </div>
-        <!--FIM CARD-->
-        <!--INICIO CARD-->
+      <!--FIM CARD-->
+      <!--INICIO CARD-->
           <div class="card mt-3">
             <div class="card-header">
               <a href="https://youtu.be/eRaAMNjCFYw" target="_blank" >Normalização - Primeira Forma Normal</a>
@@ -1366,8 +1366,196 @@
               <a href="https://images.app.goo.gl/pKQTxfynZL3ksG8X6" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
             </div>
           </div>
-        <!--FIM CARD-->
-
+      <!--FIM CARD-->
+      <!--INICIO CARD-->
+        <div class="card mt-3">
+          <div class="card-header">
+            <a href="https://youtu.be/6ER9lWOk-cY" target="_blank">Normalização - Segunda Forma Normal</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Segunda Forma Normal</h5>
+            <div class="ml-3">
+              <ul>
+                <li>
+                  Baseada no conceito de <b>Dependência Funcional Total</b>;
+                </li>
+                <li>
+                  Um esquema de relação <b>R</b> está na <b>2FN</b> se cada atributo não-chave de <b>R</b> for total e funcionalmente dependente da <b>PK</b> de <b>R</b>;
+                </li>
+                <li>
+                  Pata testar a <b>2FN</b>, testamos as dependências funcionais cujos atributos fazem parte da chave primária;
+                </li>
+                <li>
+                  Caso a <b>PK</b> enha úm único atributo, esse teste não precisa ser aplicado.
+                </li>
+              </ul>
+            </div>
+            <h5 class="card-title mt-3">Uma tabela está na Segunda Forma Normal se:</h5>
+            <div class="ml-3">
+              <ul>
+                <li>
+                  Está na <b>1FN</b>;
+                </li>
+                <li>
+                  Todos os atributos não-chave são funcionalmente dependentes de <u>todas as partes</u> da chave primária;
+                </li>
+                <li>
+                  Não existem dependências parciais;
+                </li>
+                <li>
+                  Caso contrário, deve-se gerar uma nova tabela com os dados.  
+                </li>
+                <li>
+                  <i>Um atributo-chave é um que á uma PK ou parte de uma PK composta</i>.
+                </li>
+                <li>
+                  Deve-se criar uma nova relação para cada chave <b>PK</b> ou combinação de atributos que forem <b>determinantes em uma dependência funcional</b>.
+                </li>
+                <li>
+                  Esse atributo será <b>PK</b> na nova tabela;  
+                </li>
+                <li>
+                  Mova os atributos não-chave dependentes desta <b>PK</b> para a nova tabela.
+                </li>
+              </ul>
+            </div>
+            <a href="https://images.app.goo.gl/1nnXYoH3UXmYoctq6" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
+          </div>
+        </div>
+      <!--FIM CARD-->
+      <!--INICIO CARD-->
+        <div class="card mt-3">
+          <div class="card-header">
+            <a href="https://youtu.be/usA8QKvEHWw" target="_blank">Normalização - Terceira Forma Normal</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Terceira Forma Normal</h5>
+            <div class="ml-3">
+              <ul>
+                <li>
+                  Baseada no conceito de <b>Dependência Transitiva</b>;
+                </li>
+                <li>
+                  A relação não deve ter um atributo não-chave determinado funcionalmente por outro atributo não-chave(ou conjunto);
+                </li>
+                <li>
+                  Não deve haver dependência transitiva de um atributo não-chave sobre a <b>PK</b>;
+                </li>
+                <li>
+                  Deve-se decompor e montar uma nova relação que inclua os atributos não-chave que determinam funcionalmente outros atributos não-chave.
+                </li>
+              </ul>
+            </div>
+            <h5 class="card-title mt-3">Uma tabela está na Terceira Forma Normal se:</h5>
+            <div class="ml-3">
+              <ul>
+                <li>
+                  Estiver na <b>2FN</b>;
+                </li>
+                <li>
+                  Não existem <b>dependências transitivas</b>;
+                </li>
+                <li>
+                  Uma tabela está na Terceira Forma Normal se ela estiver na segunda forma normal e se nenhuma coluna não-chave depender de outra coluna não-chave.
+                </li>
+                <li>
+                  <i>Uma dependência transitiva em uma tabela é uma dependência funcional entre dois ou mais atributos não-chave</i>;
+                </li>
+              </ul>
+              <div class="card-text mb-2">
+                Para cada atributo(ou grupo) não-chave que for um determinante na relação, crie uma nova tabela;
+              </div>
+              <div class="card-text mb-2">
+                Esse atributo será a <b>PK</b> na nova relação;
+              </div>
+              <div class="card-text">
+                O atributo(PK na nova relação) fica também na tabela original, e servirá como uma chave estrangeira para associar as duas relações.
+              </div>
+            </div>
+            <a href="https://images.app.goo.gl/rejvasTSyC3Jdqxn7" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
+          </div>
+        </div>
+      <!--FIM CARD-->
+      <!--INICIO CARD-->
+      <div class="card mt-3">
+        <div class="card-header">
+          <a href="https://youtu.be/o6mSiTO-vak" target="_blank">Normalização - Forma Normal de Boyce-Codd</a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Forma Normal de Boyce-Codd</h5>
+          <div class="ml-3">
+            <div class="card-text mb-2">
+              A definição original da <b>3FN</b> de Codd não lidava adequadamente com uma relação que:
+            </div>
+            <ul>
+              <li>
+                Tivesse duas ou mais chaves candidatas;
+              </li>
+              <li>
+                Essas chaves candidatas fossem compostas;
+              </li>
+              <li>
+                Elas tivessem superposição (Atributos em comum).
+              </li>
+            </ul>
+            <div class="card-text mb-2">
+              Caso a combinação das condições acima não ocorra em uma tabela, basta aplicar a <b>3FN</b>.
+            </div>
+            <div class="card-text mb-2">
+              Uma relação está em <b>FNBC</b> se e somente se os únicos determinantes são chaves candidatas.
+            </div>
+          </div>
+          <h5 class="card-title mt-3">Uma tabela está na forma normal de Boyce-Codd quando:</h5>
+          <div class="ml-3">
+            <ul>
+              <li>
+                Cada relação na <b>FNBC</b> também está na <b>3FN</b>, mas uma relação na <b>3FN</b> não está necessáriamente na <b>FNBC</b>(a maioria está).
+              </li>
+              <li>
+                Quando uma tabela possui mais de uma chave candidata, podem ocorrer anomalias.
+              </li>
+              <li>
+                Na <b>FNBC</b> as chaves candidatas não possuem dependências parciais por outros atributos;
+              </li>
+              <li>
+                Uma relação <b>R</b> está na <b>FNBC</b> sempre que uma dependência funcional não-trivial <b>X</b>-><b>A</b> se mantiver em <b>R</b>, assim <b>X</b> é uma superchave de <b>R</b>.
+              </li>
+            </ul>
+          </div>
+          <h5 class="card-title mt-3">FNBC - Pontos a considerar</h5>
+          <div class="ml-3">
+            <div class="card-title mb-2">
+              <b>Determinante:</b> "Lado esquerdo" de uma <b>DF</b>, como o <b>X</b> em <b>X</b>-><b>Y</b> (<b>Y</b> é "dependente"); <b>X</b> <i>determina funcionalmente</i> <b>Y</b>.
+            </div>
+            <div class="card-text mb-2">
+              <b>Dependência Funcional Trivial:</b> Dependência que não pode deixar de ser satisfeita. Uma <b>DF</b> é trivial se o lado direito da expressão é um subconjunto do lado esquerdo. <br>
+              <b>A</b>-><b>B</b> é uma <b>DF</b> trivial se <b>B</b> for um subconjunto de <b>A</b>.
+            </div>
+            <div class="card-text mb-2">
+              <b>Exemplo:</b> <b>{ID_Func, Nome_Func}-> ID_Func</b> é uma <b>DF</b> trivial pois <b>ID_Func</b> é um subconjunto de <b>{ID_Funk, Nome_Func}</b>.
+            </div>
+          </div>
+          <h5 class="card-title mt-3">FNBC - Normalizando</h5>
+          <div class="ml-3">
+            <div class="card-text mb-2">
+              Para normalizar uma tabela até a <b>FNBC</b> devemos decompor a tabela com os passos a seguir:
+            </div>
+            <ul>
+              <li>
+                Encontrar uma dependência funcional não-trivial <b>X</b>-><b>Y</b> que viole a condição de <b>FNBC</b>. <b>X</b> não deve ser uma superchave.
+              </li>
+              <li>
+                Dividir a tabela em duas: Uma com os atributos <b>XY</b>, ou seja, todos os atrivutos da dependência;
+              </li>
+              <li>
+                Outra com os atributos <b>X</b> juntamente com os atributos restantes da tabela original;
+              </li>
+            </ul>
+          </div>
+          <a href="https://images.app.goo.gl/qLMKJ52Bfru2bHV2A" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
+        </div>
+      </div>
+      <!--FIM CARD-->
         
   
 
