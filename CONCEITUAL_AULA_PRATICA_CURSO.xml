@@ -3591,7 +3591,7 @@
       <Ligacoes>
         <Ligacao Destino_ID="629">
           <MostraCardinalidade Valor="-1" Card_id="635"/>
-          <Cardinalidades Cardinalidade="4">
+          <Cardinalidades Cardinalidade="2">
             <Cardinalidade nome="" id="635">
               <Left Valor="1237"/>
               <Top Valor="440"/>
@@ -3609,7 +3609,7 @@
               <TamAuto Valor="-1"/>
               <Tipo Valor="0"/>
               <TextAlin Valor="0"/>
-              <Card Valor="4"/>
+              <Card Valor="2"/>
               <Fixa Valor="0"/>
               <Ligacoes/>
             </Cardinalidade>
@@ -3619,7 +3619,7 @@
         </Ligacao>
         <Ligacao Destino_ID="3">
           <MostraCardinalidade Valor="-1" Card_id="636"/>
-          <Cardinalidades Cardinalidade="1">
+          <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="636">
               <Left Valor="1086"/>
               <Top Valor="460"/>
@@ -3637,7 +3637,7 @@
               <TamAuto Valor="-1"/>
               <Tipo Valor="0"/>
               <TextAlin Valor="0"/>
-              <Card Valor="1"/>
+              <Card Valor="3"/>
               <Fixa Valor="0"/>
               <Ligacoes/>
             </Cardinalidade>
@@ -3720,9 +3720,9 @@
         </Ligacao>
       </Ligacoes>
     </Relacao>
-    <Relacao nome="Pertence" id="660">
+    <Relacao nome="possui" id="660">
       <Left Valor="1091"/>
-      <Top Valor="635"/>
+      <Top Valor="640"/>
       <Width Valor="102"/>
       <Height Valor="51"/>
       <Fonte default="-1"/>

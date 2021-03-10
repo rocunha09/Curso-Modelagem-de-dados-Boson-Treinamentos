@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <MER>
 	<Informacoes>
-		<Posicao Left="0" Top="0"/>
+		<Posicao Left="350" Top="0"/>
 		<TotalItens Valor="175"/>
 		<Tipo Valor="LÓGICO"/>
 		<Versao Valor="2.0.0"/>
@@ -1885,7 +1885,7 @@
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="140">
               <Left Valor="742"/>
-              <Top Valor="471"/>
+              <Top Valor="473"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2152,8 +2152,8 @@
           <MostraCardinalidade Valor="-1" Card_id="116"/>
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="116">
-              <Left Valor="261"/>
-              <Top Valor="572"/>
+              <Left Valor="416"/>
+              <Top Valor="483"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2179,7 +2179,7 @@
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="117">
               <Left Valor="417"/>
-              <Top Valor="491"/>
+              <Top Valor="493"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2246,7 +2246,7 @@
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="138">
               <Left Valor="742"/>
-              <Top Valor="530"/>
+              <Top Valor="534"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2488,7 +2488,7 @@
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="122">
               <Left Valor="745"/>
-              <Top Valor="213"/>
+              <Top Valor="215"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2753,7 +2753,7 @@
       <Ligacoes>
         <Ligacao Destino_ID="163">
           <MostraCardinalidade Valor="-1" Card_id="176"/>
-          <Cardinalidades Cardinalidade="4">
+          <Cardinalidades Cardinalidade="2">
             <Cardinalidade nome="" id="176">
               <Left Valor="810"/>
               <Top Valor="737"/>
@@ -2769,7 +2769,7 @@
               <TamAuto Valor="-1"/>
               <Tipo Valor="0"/>
               <TextAlin Valor="0"/>
-              <Card Valor="4"/>
+              <Card Valor="2"/>
               <Fixa Valor="0"/>
               <Ligacoes/>
             </Cardinalidade>
@@ -2779,10 +2779,10 @@
         </Ligacao>
         <Ligacao Destino_ID="6">
           <MostraCardinalidade Valor="-1" Card_id="177"/>
-          <Cardinalidades Cardinalidade="1">
+          <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="177">
               <Left Valor="742"/>
-              <Top Valor="589"/>
+              <Top Valor="595"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2795,7 +2795,7 @@
               <TamAuto Valor="-1"/>
               <Tipo Valor="0"/>
               <TextAlin Valor="0"/>
-              <Card Valor="1"/>
+              <Card Valor="3"/>
               <Fixa Valor="0"/>
               <Ligacoes/>
             </Cardinalidade>
@@ -2916,7 +2916,7 @@
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="195">
               <Left Valor="417"/>
-              <Top Valor="570"/>
+              <Top Valor="574"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
