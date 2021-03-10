@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <MER>
 	<Informacoes>
-		<Posicao Left="350" Top="0"/>
+		<Posicao Left="50" Top="0"/>
 		<TotalItens Valor="175"/>
 		<Tipo Valor="LÓGICO"/>
 		<Versao Valor="2.0.0"/>
@@ -56,7 +56,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -77,7 +77,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (40 bytes)"/>
+          <Tipo Valor="Caractere (20 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -115,7 +115,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (8 bytes)"/>
+          <Tipo Valor="Inteiro (6 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -136,7 +136,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -157,7 +157,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytres)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -178,7 +178,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (25 bytes)"/>
+          <Tipo Valor="Caractere (20 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -199,7 +199,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (40 bytes)"/>
+          <Tipo Valor="Caractere (25 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -220,7 +220,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (40 bytes)"/>
+          <Tipo Valor="Caractere (11 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -283,7 +283,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (50 bytes)"/>
+          <Tipo Valor="Caractere (80 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -304,7 +304,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (50 bytes)"/>
+          <Tipo Valor="Caractere (80 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -325,7 +325,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (50 bytes)"/>
+          <Tipo Valor="Caractere (60 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -346,7 +346,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (200 bytes)"/>
+          <Tipo Valor="Caractere (11 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -356,7 +356,7 @@
       </Campos>
     </Tabela>
     <Tabela nome="Disc_Hist" id="8">
-      <Left Valor="1207"/>
+      <Left Valor="1208"/>
       <Top Valor="545"/>
       <Width Valor="271"/>
       <Height Valor="103"/>
@@ -371,7 +371,7 @@
       <cOrdem Valor="0"/>
       <Campos>
         <Campo nome="RA" id="48">
-          <Left Valor="1207"/>
+          <Left Valor="1208"/>
           <Top Valor="564"/>
           <Width Valor="269"/>
           <Height Valor="19"/>
@@ -384,7 +384,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (8 bytes)"/>
+          <Tipo Valor="Inteiro (6 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -392,7 +392,7 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="Cod_Disciplina" id="50">
-          <Left Valor="1207"/>
+          <Left Valor="1208"/>
           <Top Valor="582"/>
           <Width Valor="269"/>
           <Height Valor="19"/>
@@ -405,7 +405,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytres)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -413,7 +413,7 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="Nota" id="51">
-          <Left Valor="1207"/>
+          <Left Valor="1208"/>
           <Top Valor="600"/>
           <Width Valor="269"/>
           <Height Valor="19"/>
@@ -434,7 +434,7 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="Frequência" id="52">
-          <Left Valor="1207"/>
+          <Left Valor="1208"/>
           <Top Valor="618"/>
           <Width Valor="269"/>
           <Height Valor="19"/>
@@ -447,7 +447,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytres)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -485,7 +485,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -506,7 +506,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytres)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -569,7 +569,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -628,7 +628,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -649,7 +649,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -670,7 +670,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (40 bytes)"/>
+          <Tipo Valor="Caractere (20 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -691,7 +691,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (40 bytes)"/>
+          <Tipo Valor="Caractere (50 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -750,7 +750,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -771,7 +771,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -792,7 +792,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (10 bytes)"/>
+          <Tipo Valor="Caractere (5 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -893,7 +893,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -914,7 +914,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -973,7 +973,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytres)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -994,7 +994,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (8 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1032,7 +1032,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytres)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1053,7 +1053,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytres)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1091,7 +1091,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (8 bytes)"/>
+          <Tipo Valor="Inteiro (6 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1112,7 +1112,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytres)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1150,7 +1150,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (2 bytres)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1171,7 +1171,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (8 bytes)"/>
+          <Tipo Valor="Inteiro (6 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1310,7 +1310,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (1 byte)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1330,8 +1330,8 @@
           <Anexos/>
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
-          <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (8 bytes)"/>
+          <IsFKey Valor="0"/>
+          <Tipo Valor="Inteiro (6 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1352,7 +1352,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (1 byte)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1411,7 +1411,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (1 byte)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1432,7 +1432,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (20 bytes)"/>
+          <Tipo Valor="Caractere (12 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1470,7 +1470,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (1 byte)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1491,7 +1491,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (8 bytes)"/>
+          <Tipo Valor="Inteiro (6 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1511,8 +1511,8 @@
           <Anexos/>
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
-          <IsFKey Valor="-1"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <IsFKey Valor="0"/>
+          <Tipo Valor="inteiro (1 byte)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1533,7 +1533,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (80 bytes)"/>
+          <Tipo Valor="Caractere (50 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1554,7 +1554,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="inteiro (10 bytes)"/>
+          <Tipo Valor="inteiro (2 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1575,7 +1575,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (10 bytes)"/>
+          <Tipo Valor="Caractere (8 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1596,7 +1596,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (25 bytes)"/>
+          <Tipo Valor="Caractere (20 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1634,7 +1634,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="-1"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Inteiro (4 bytes)"/>
+          <Tipo Valor="Inteiro (1 byte)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1655,7 +1655,7 @@
           <ApenasSeparador Valor="0"/>
           <IsKey Valor="0"/>
           <IsFKey Valor="0"/>
-          <Tipo Valor="Caractere (20 bytes)"/>
+          <Tipo Valor="Caractere (10 bytes)"/>
           <TabOrigem Valor="0"/>
           <CampoOrigem Valor="0"/>
           <Complemento Valor=""/>
@@ -1750,7 +1750,7 @@
           <MostraCardinalidade Valor="-1" Card_id="134"/>
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="134">
-              <Left Valor="1169"/>
+              <Left Valor="1170"/>
               <Top Valor="581"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
@@ -1843,7 +1843,7 @@
           <MostraCardinalidade Valor="-1" Card_id="132"/>
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="132">
-              <Left Valor="1342"/>
+              <Left Valor="1343"/>
               <Top Valor="530"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
