@@ -9,9 +9,13 @@
       body{
         background-color: #959596;
       }
-        .borda{
-            border: 1px solid black;
-        }
+      .borda{
+        border: 1px solid black;
+      }
+
+      .imagem {
+        max-width: 100%;
+      }
     </style>
     
 </head>
@@ -1477,85 +1481,435 @@
         </div>
       <!--FIM CARD-->
       <!--INICIO CARD-->
-      <div class="card mt-3">
-        <div class="card-header">
-          <a href="https://youtu.be/o6mSiTO-vak" target="_blank">Normalização - Forma Normal de Boyce-Codd</a>
+        <div class="card mt-3">
+          <div class="card-header">
+            <a href="https://youtu.be/o6mSiTO-vak" target="_blank">Normalização - Forma Normal de Boyce-Codd</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Forma Normal de Boyce-Codd</h5>
+            <div class="ml-3">
+              <div class="card-text mb-2">
+                A definição original da <b>3FN</b> de Codd não lidava adequadamente com uma relação que:
+              </div>
+              <ul>
+                <li>
+                  Tivesse duas ou mais chaves candidatas;
+                </li>
+                <li>
+                  Essas chaves candidatas fossem compostas;
+                </li>
+                <li>
+                  Elas tivessem superposição (Atributos em comum).
+                </li>
+              </ul>
+              <div class="card-text mb-2">
+                Caso a combinação das condições acima não ocorra em uma tabela, basta aplicar a <b>3FN</b>.
+              </div>
+              <div class="card-text mb-2">
+                Uma relação está em <b>FNBC</b> se e somente se os únicos determinantes são chaves candidatas.
+              </div>
+            </div>
+            <h5 class="card-title mt-3">Uma tabela está na forma normal de Boyce-Codd quando:</h5>
+            <div class="ml-3">
+              <ul>
+                <li>
+                  Cada relação na <b>FNBC</b> também está na <b>3FN</b>, mas uma relação na <b>3FN</b> não está necessáriamente na <b>FNBC</b>(a maioria está).
+                </li>
+                <li>
+                  Quando uma tabela possui mais de uma chave candidata, podem ocorrer anomalias.
+                </li>
+                <li>
+                  Na <b>FNBC</b> as chaves candidatas não possuem dependências parciais por outros atributos;
+                </li>
+                <li>
+                  Uma relação <b>R</b> está na <b>FNBC</b> sempre que uma dependência funcional não-trivial <b>X</b>-><b>A</b> se mantiver em <b>R</b>, assim <b>X</b> é uma superchave de <b>R</b>.
+                </li>
+              </ul>
+            </div>
+            <h5 class="card-title mt-3">FNBC - Pontos a considerar</h5>
+            <div class="ml-3">
+              <div class="card-title mb-2">
+                <b>Determinante:</b> "Lado esquerdo" de uma <b>DF</b>, como o <b>X</b> em <b>X</b>-><b>Y</b> (<b>Y</b> é "dependente"); <b>X</b> <i>determina funcionalmente</i> <b>Y</b>.
+              </div>
+              <div class="card-text mb-2">
+                <b>Dependência Funcional Trivial:</b> Dependência que não pode deixar de ser satisfeita. Uma <b>DF</b> é trivial se o lado direito da expressão é um subconjunto do lado esquerdo. <br>
+                <b>A</b>-><b>B</b> é uma <b>DF</b> trivial se <b>B</b> for um subconjunto de <b>A</b>.
+              </div>
+              <div class="card-text mb-2">
+                <b>Exemplo:</b> <b>{ID_Func, Nome_Func}-> ID_Func</b> é uma <b>DF</b> trivial pois <b>ID_Func</b> é um subconjunto de <b>{ID_Funk, Nome_Func}</b>.
+              </div>
+            </div>
+            <h5 class="card-title mt-3">FNBC - Normalizando</h5>
+            <div class="ml-3">
+              <div class="card-text mb-2">
+                Para normalizar uma tabela até a <b>FNBC</b> devemos decompor a tabela com os passos a seguir:
+              </div>
+              <ul>
+                <li>
+                  Encontrar uma dependência funcional não-trivial <b>X</b>-><b>Y</b> que viole a condição de <b>FNBC</b>. <b>X</b> não deve ser uma superchave.
+                </li>
+                <li>
+                  Dividir a tabela em duas: Uma com os atributos <b>XY</b>, ou seja, todos os atrivutos da dependência;
+                </li>
+                <li>
+                  Outra com os atributos <b>X</b> juntamente com os atributos restantes da tabela original;
+                </li>
+              </ul>
+            </div>
+            <a href="https://images.app.goo.gl/qLMKJ52Bfru2bHV2A" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
+          </div>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">Forma Normal de Boyce-Codd</h5>
-          <div class="ml-3">
-            <div class="card-text mb-2">
-              A definição original da <b>3FN</b> de Codd não lidava adequadamente com uma relação que:
-            </div>
-            <ul>
-              <li>
-                Tivesse duas ou mais chaves candidatas;
-              </li>
-              <li>
-                Essas chaves candidatas fossem compostas;
-              </li>
-              <li>
-                Elas tivessem superposição (Atributos em comum).
-              </li>
-            </ul>
-            <div class="card-text mb-2">
-              Caso a combinação das condições acima não ocorra em uma tabela, basta aplicar a <b>3FN</b>.
-            </div>
-            <div class="card-text mb-2">
-              Uma relação está em <b>FNBC</b> se e somente se os únicos determinantes são chaves candidatas.
-            </div>
-          </div>
-          <h5 class="card-title mt-3">Uma tabela está na forma normal de Boyce-Codd quando:</h5>
-          <div class="ml-3">
-            <ul>
-              <li>
-                Cada relação na <b>FNBC</b> também está na <b>3FN</b>, mas uma relação na <b>3FN</b> não está necessáriamente na <b>FNBC</b>(a maioria está).
-              </li>
-              <li>
-                Quando uma tabela possui mais de uma chave candidata, podem ocorrer anomalias.
-              </li>
-              <li>
-                Na <b>FNBC</b> as chaves candidatas não possuem dependências parciais por outros atributos;
-              </li>
-              <li>
-                Uma relação <b>R</b> está na <b>FNBC</b> sempre que uma dependência funcional não-trivial <b>X</b>-><b>A</b> se mantiver em <b>R</b>, assim <b>X</b> é uma superchave de <b>R</b>.
-              </li>
-            </ul>
-          </div>
-          <h5 class="card-title mt-3">FNBC - Pontos a considerar</h5>
-          <div class="ml-3">
-            <div class="card-title mb-2">
-              <b>Determinante:</b> "Lado esquerdo" de uma <b>DF</b>, como o <b>X</b> em <b>X</b>-><b>Y</b> (<b>Y</b> é "dependente"); <b>X</b> <i>determina funcionalmente</i> <b>Y</b>.
-            </div>
-            <div class="card-text mb-2">
-              <b>Dependência Funcional Trivial:</b> Dependência que não pode deixar de ser satisfeita. Uma <b>DF</b> é trivial se o lado direito da expressão é um subconjunto do lado esquerdo. <br>
-              <b>A</b>-><b>B</b> é uma <b>DF</b> trivial se <b>B</b> for um subconjunto de <b>A</b>.
-            </div>
-            <div class="card-text mb-2">
-              <b>Exemplo:</b> <b>{ID_Func, Nome_Func}-> ID_Func</b> é uma <b>DF</b> trivial pois <b>ID_Func</b> é um subconjunto de <b>{ID_Funk, Nome_Func}</b>.
-            </div>
-          </div>
-          <h5 class="card-title mt-3">FNBC - Normalizando</h5>
-          <div class="ml-3">
-            <div class="card-text mb-2">
-              Para normalizar uma tabela até a <b>FNBC</b> devemos decompor a tabela com os passos a seguir:
-            </div>
-            <ul>
-              <li>
-                Encontrar uma dependência funcional não-trivial <b>X</b>-><b>Y</b> que viole a condição de <b>FNBC</b>. <b>X</b> não deve ser uma superchave.
-              </li>
-              <li>
-                Dividir a tabela em duas: Uma com os atributos <b>XY</b>, ou seja, todos os atrivutos da dependência;
-              </li>
-              <li>
-                Outra com os atributos <b>X</b> juntamente com os atributos restantes da tabela original;
-              </li>
-            </ul>
-          </div>
-          <a href="https://images.app.goo.gl/qLMKJ52Bfru2bHV2A" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
-        </div>
-      </div>
       <!--FIM CARD-->
+      <!--INICIO CARD-->
+        <div class="card mt-3">
+          <div class="card-header">
+            <a href="https://youtu.be/hsQJAdWksMI" target="_blank">Projeto Prático do Curso</a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Apresentação</h5>
+            <div class="ml-3">
+              <div class="card-text">
+                Banco de dados para gerenciamento de uma faculdade.
+              </div>
+            </div>
+            <h5 class="card-title mt-3">Objetivos:</h5>
+            <div class="ml-3">
+              <div class="card-text">
+                Realizar o controle centralizados de alunos, professores, cursos, disciplinas, histórico e turmas.
+              </div>
+            </div>
+            <h5 class="card-title mt-3">Fases do projeto:</h5>
+            <div class="ml-3">
+              <ol>
+                <li>
+                  Levantamento dos Requisitos;
+                </li>
+                <li>
+                  Identificação de Entidades, Relacionamentos e Atributos;
+                </li>
+                <li>
+                  Modelo Conceitual Entidade-Relacionamento;
+                </li>
+                <li>
+                  Diagrama Lógico Entidade-Relacionamento;
+                </li>
+                <li>
+                  Normalização;
+                </li>
+                <li>
+                  Dicionário de Dados;
+                </li>
+                <li>
+                  Implementação do Banco de dados;
+                </li>
+                <li>
+                  Testes básicos;
+                </li>
+              </ol>
+            </div>
+            <div class="alert alert-dark text-center" role="alert">
+              <h5><b>1</b> Levantamento de Requisitos.</h5>
+            </div>
+            <h5 class="card-title mt-3">Regras de negócio</h5>
+            <div class="ml-3">
+              <ol>
+                <li>
+                  Um Aluno só pod estar matriculado em 01 curso por vez.
+                </li>
+                <li>
+                  Alunos possuem um código de identificação(RA).
+                </li>
+                <li>
+                  Cursos são compostos por disciplinas.
+                </li>
+                <li>
+                  Cada disciplina terá no máximo 30 alunos por turma.
+                </li>
+                <li>
+                  As disciplinas podem ser obrigatórias ou optativas, dependendo do curso.
+                </li>
+                <li>
+                  As disciplinas pertencem a departamentos específicos.
+                </li>
+                <li>
+                  Cada disciplina possui um código de identificação.
+                </li>
+                <li>
+                  Os alunos podem trancar matricula, não estando então matriculados em nenhuma disciplina no semestre.
+                </li>
+                <li>
+                  Em cada semestre, cada aluno pode se matricular em no máximo 9 disciplinas.
+                </li>
+                <li>
+                  O aluno só pode ser reprovado no máximo 3 vezes na mesma disciplinas.
+                </li>
+                <li>
+                  A faculdade terá no máximo 3000 alunos matriculados simultaneamente, em 10 cursos distintos.
+                </li>
+                <li>
+                  Entram 300 alunos novos por ano.
+                </li>
+                <li>
+                  Existem 90 disciplinas no total disponíveis.
+                </li>
+                <li>
+                  Um histórico escolar traz todas as disciplinas cursadas por um aluno, incluindo nota final, frequência e período do curso realizado.
+                </li>
+                <li>
+                  Professores podem ser cadastrados mesmo sem lecionar disciplinas.
+                </li>
+                <li>
+                  Existem 40 professores trabalhando na escola.
+                </li>
+                <li>
+                  Cada professor irá lecionar no máximo 4 disciplinas diferentes.
+                </li>
+                <li>
+                  Cada professor é vinculado a um departamento.
+                </li>
+                <li>
+                  Professores são identificados por um código de professor.
+                </li>
+              </ol>
+            
+              <div class="alert alert-dark text-center" role="alert">
+                <h5><b>2</b> Identificação de Entidades, Relacionamentos e Atributos.</h5>
+              </div>
+              <h5 class="card-title mt-3">Entidades Encontradas</h5>
+              <ul>
+                <li>
+                  Aluno.
+                </li>
+                <li>
+                  Professor.
+                </li>
+                <li>
+                  Disciplina.
+                </li>
+                <li>
+                  Curso.    
+                </li>
+                <li>
+                  Departamento.
+                </li>
+              </ul>
+              <h5 class="card-title mt-3">Relacionamentos Encontrados</h5>
+              <ul>
+                <li>
+                  Aluno esta matriculado em curso.
+                </li>
+                <li>
+                  Aluno cursa disciplina.
+                </li>
+                <li>
+                  Aluno realizou disciplina.
+                </li>
+                <li>
+                  Disciplina pertence ao curso.
+                </li>
+                <li>
+                  Professor ministra disciplina.
+                </li>
+                <li>
+                  Professor pertence a departamento.
+                </li>
+                <li>
+                  Departamento é responsável por disciplina.
+                </li>
+                <li>
+                  Departamento controla curso.
+                </li>
+                <li>
+                  Disciplina depende de disciplina.
+                </li>
+              </ul>
+              <h5 class="card-title mt-3">Listando Alguns Atributos</h5>
+              <ul>
+                <li>
+                  Aluno:
+                  <ul>
+                    <li>
+                      Numero da matricula.
+                    </li>
+                    <li>
+                      Nome.
+                    </li>
+                    <li>
+                      Sobrenome.
+                    </li>
+                    <li>
+                      Endereço(Rua, Numero, Bairro, CEP).
+                    </li>
+                    <li>
+                      Código do curso.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Professor:
+                  <ul>
+                    <li>
+                      Código do professor.
+                    </li>
+                    <li>
+                      Nome.
+                    </li>
+                    <li>
+                      Sobrenome.
+                    </li>
+                    <li>
+                      Código Departamento.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Disciplina:
+                  <ul>
+                    <li>
+                      Código da Disciplina.
+                    </li>
+                    <li>
+                      Nome da Disciplina.
+                    </li>
+                    <li>
+                    Descrição Curricular.
+                    </li>
+                    <li>
+                      Código do Departamento.
+                    </li>
+                    <li>
+                      Numero de Alunos.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Curso:
+                  <ul>
+                    <li>
+                      Código do curso.
+                    </li>
+                    <li>
+                      Nome do Curso.
+                    </li>
+                    <li>
+                      Código do Departamento.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Departamento:
+                  <ul>
+                    <li>
+                      Código do Dpartamento.
+                    </li>
+                    <li>
+                      Nome do Departamento.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="alert alert-dark text-center" role="alert">
+              <h5><b>3</b> Modelo Conceitual Entidade-Relacionamento</h5>
+            </div>
+            <div class="ml-3">
+              <div class="card-text">
+                Será utilizado para modelagem do banco de dados o software brModelo V2.0, os arquivos são salvos em formato <b>XML</b>. <br>
+                Para efetuar donwload do software <a href="http://www.sis4.com/brModelo/brModelo.2.0.zip">clique aqui.</a>
+              </div>
+            </div>
+            <h5 class="card-title mt-3">Entidade Associativa</h5>
+            <div class="ml-3">
+              <div class="card-text mb-2">
+                Uma entidade associativa é implementada para resolver um relacionamento muitos para muitos<b>(N:M)</b>.
+              </div>
+              <div class="card-text mb-2">
+                Gera-se uma tabela associativa que permite mapear duas ou mais tabelas fazendo referência às chaves primárias de cada tabela. <br>
+                Contém as chaves estrangeiras, cada uma em um relacionamento <i>um-para-muitos</i> da tabela de junção, para as tabelas de dados individuais.
+              </div>
+              <div class="card-text mb-2">
+                Sua chave primária, no geral, é composta a partir das colunas de chaves estrangeiras em si.
+              </div>
+              <div class="card-text mb-2">
+                Uma tabela associativa também pode ser chamada de: Tabela de Referência cruzada, tabela de intersecção, tabela de junção, tabela de mapeamento, tabela de transição, ou ainda outros nomes.
+              </div>
+            </div>
+            <h5 class="card-title mt-3">No nosso caso temos:</h5>
+            <div class="ml-3">
+              <ul>
+                <li>
+                  <b>Curso</b> pertence <b>Disciplina</b>.
+                </li>
+                <li>
+                  <b>Disciplina</b> compõe <b>Histórico</b>.
+                </li>
+                <li>
+                  <b>Professor</b> ministra <b>Disciplina</b>.
+                </li>
+              </ul>
+              <div class="card-text">
+                <b>**</b>Precisamos gerar Entidades Associativas para os relacionamentos <b>pertence</b>, <b>compõe</b> e <b>ministra</b>. E ficará assim:
+              </div>
+              <ul>
+                <li>
+                  <b>Curso</b> possui <b>curso-disc</b> pertence <b>Disciplina</b>.
+                </li>
+                <li>
+                  <b>Disciplina</b> compõe <b>disc-hist</b> é composto <b>Histórico</b>.
+                </li>
+                <li>
+                  <b>Professor</b> leciona <b>prof-dics</b> é lecionada <b>Disciplina</b>.
+                </li>
+              </ul>
+            </div>
+            <h5 class="card-title mt-3">Primeiro Modelo Entidade-relaconamento</h5>
+            <div class="ml-3">
+              <img src="modelo-conceitual-1.png" alt="modelo conceitual 1" class="imagem">
+            </div>
+            <div class="alert alert-dark text-center mt-3" role="alert">
+              <h5><b>4</b> Diagrama lógico</h5>
+            </div>
+            <div class="ml-3">
+              <div class="card-text">
+                Geralmente o diagrama lógico é a "tradução" do modelo conceitual para um formato de tabelas ligadas onde os atributos passam a ser exibidos.
+              </div>
+              <h5 class="card-title mt-3">Diagrama Lógico Entidade-Relacionamento</h5>
+              <img src="diagrama-logico-1.png" alt="modelo conceitual 1" class="imagem">
+            </div>
+            <div class="alert alert-dark text-center mt-3" role="alert">
+              <h5><b>5</b> Normalização</h5>
+            </div>
+            <h5 class="card-title mt-3">O que foi realizado?</h5>
+            <div class="ml-3">
+              <div class="card-text">
+                Basicamente a entidade aluno encontrava-se com atributos multivalorados, e como a primeira forma normal exige, o mesmo só poderia conter atributos atômicos, logo os atributos filiação e telefone por exemplo foram decompostos. <br>
+                Já a segunda forma normal nos levou a criação de tabelas separadas para conter endereço e telefone, pois os mesmos possuiam dependência transitiva e eram atributos compostos. <br>
+                abaixo o Modelo conceitual Final e Diagrama Lógico final.
+              </div>
+              <h5 class="card-title mt-3">Modelo Conceitual Entidade-Relacionamento</h5>
+              <img src="modelo-conceitual-2.png" alt="modelo conceitual 1" class="imagem">
+              <h5 class="card-title mt-3">Diagrama Lógico Entidade-Relacionamento</h5>
+              <img src="diagrama-logico-2.png" alt="modelo conceitual 1" class="imagem">
+              <div class="card-text">
+                <b>**</b><i>Lembrando: os aquivos XML dos diagramas encontram-se no repositório para visualização usando o software brModelo V2.0</i>
+              </div>
+            </div>
+            <div class="alert alert-dark text-center mt-3" role="alert">
+              <h5><b>6</b> Dicionário de Dados</h5>
+            </div>
+            <div class="alert alert-dark text-center mt-3" role="alert">
+              <h5><b>7</b> Implementação do Banco de Dados</h5>
+            </div>
+            <div class="alert alert-dark text-center mt-3" role="alert">
+              <h5><b>8</b> Testes Básicos</h5>
+            </div>
+            <div>
+              <a href="http://" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
+            </div>
+          </div>
+        </div>
+      <!--FIM CARD-->
+
         
   
 
