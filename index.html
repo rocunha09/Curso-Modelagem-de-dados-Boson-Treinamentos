@@ -1897,23 +1897,2074 @@
             <div class="alert alert-dark text-center mt-3" role="alert">
               <h5><b>6</b> Dicionário de Dados</h5>
             </div>
-            <div class="alert alert-dark text-center mt-3" role="alert">
-              <h5><b>7</b> Implementação do Banco de Dados</h5>
+            <h5 class="card-title mt-3 text-center">Entidades</h5>
+            <div class="ml-3">
+              <table class="table table-sm align-middle">
+                <thead>
+                  <tr class="text-center">
+                    <th class="align-middle">Entidade</th>
+                    <th class="align-middle">Relacionamento</th>
+                    <th class="align-middle">Nome do Relacionamento</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td rowspan="3" class="align-middle">
+                      DEPARTAMENTO
+                    </td>
+                    <td>
+                      Professor
+                    </td>
+                    <td>
+                      Pertence
+                    </td>
+                    <td rowspan="3" class="align-middle">
+                      Tabela para cadastro dos Departamentos da faculdade.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Curso
+                    </td>
+                    <td>
+                      Controla
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Disciplina
+                    </td>
+                    <td>
+                      Gerencia
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td rowspan="2" class="align-middle">
+                      PROFESSOR
+                    </td>
+                    <td>
+                      Departamento
+                    </td>
+                    <td>
+                      Pertence
+                    </td>
+                    <td rowspan="2" class="align-middle">
+                      Tabela para cadastro dos professores da faculdade.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Prof_Disciplina
+                    </td>
+                    <td>
+                      Leciona
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td rowspan="2" class="align-middle">
+                      TURMA
+                    </td>
+                    <td>
+                      Curso
+                    </td>
+                    <td>
+                      Gera
+                    </td>
+                    <td rowspan="2" class="align-middle">
+                      Tabela para registro de turmas em andamento ou encerradas.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Aluno
+                    </td>
+                    <td>
+                      Pertence
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td rowspan="4" class="align-middle">
+                      CURSO
+                    </td>
+                    <td>
+                      Departamento
+                    </td>
+                    <td>
+                      Controla
+                    </td>
+                    <td rowspan="4" class="align-middle">
+                      Tabela para cadastro dos cursos oferecidos pela faculdade.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Turma
+                    </td>
+                    <td>
+                      Gera
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Aluno
+                    </td>
+                    <td>
+                      Está Matriculado
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Curso_Disciplina
+                    </td>
+                    <td>
+                      Possui
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td rowspan="5" class="align-middle">
+                      ALUNO
+                    </td>
+                    <td>
+                      Curso
+                    </td>
+                    <td>
+                      Está matriculado
+                    </td>
+                    <td rowspan="5" class="align-middle">
+                      Tabela para cadastro de informações sobre a faculdade.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Turma
+                    </td>
+                    <td>
+                      Pertence
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Aluno_Disc
+                    </td>
+                    <td>
+                      Cursa
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Histórico
+                    </td>
+                    <td>
+                      Pertence a
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Telefones_Aluno
+                    </td>
+                    <td>
+                      Possui
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td rowspan="6" class="align-middle">
+                      DISCIPLINA
+                    </td>
+                    <td>
+                      Aluno_Disc
+                    </td>
+                    <td>
+                      Cursa
+                    </td>
+                    <td rowspan="6" class="align-middle">
+                      Tabela para cadastro das disciplinas que compõem os cursos oferecidos pela faculdade.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Departamento
+                    </td>
+                    <td>
+                      Gerencia
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Prof_Disciplina
+                    </td>
+                    <td>
+                      É lecionada
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Curso_Disciplina
+                    </td>
+                    <td>
+                      Pertence
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Disciplina
+                    </td>
+                    <td>
+                      Depende
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Disc_Hist
+                    </td>
+                    <td>
+                      Compõe
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td rowspan="2" class="align-middle">
+                      HISTÓRICO
+                    </td>
+                    <td>
+                      Aluno
+                    </td>
+                    <td>
+                      Pertence a
+                    </td>
+                    <td rowspan="2" class="align-middle">
+                      Tabela para geração de histórico de notas dos alunos.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Disc_Hist
+                    </td>
+                    <td>
+                      É composto
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td rowspan="2" class="align-middle">
+                      DISC_HIST
+                    </td>
+                    <td>
+                      Disciplina
+                    </td>
+                    <td>
+                      Compõe
+                    </td>
+                    <td rowspan="2" class="align-middle">
+                      Tabela associativa entre Disciplina e Histórico.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Histórico
+                    </td>
+                    <td>
+                      É composto
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td rowspan="2" class="align-middle">
+                      CURSO_DISCIPLINA
+                    </td>
+                    <td>
+                      Curso
+                    </td>
+                    <td>
+                      Possui
+                    </td>
+                    <td rowspan="2" class="align-middle">
+                      Tabela associativa entre Curso e Disciplina.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Disciplina
+                    </td>
+                    <td>
+                      Pertence
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td rowspan="2" class="align-middle">
+                      PROF_DISICPLINA
+                    </td>
+                    <td>
+                      Professor
+                    </td>
+                    <td>
+                      Pertence
+                    </td>
+                    <td rowspan="2" class="align-middle">
+                      Tabela associativa entre Professor e Disciplina.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Disciplina
+                    </td>
+                    <td>
+                      É Lecionada
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td rowspan="2" class="align-middle">
+                      ENDEREÇO_ALUNO
+                    </td>
+                    <td>
+                      Aluno
+                    </td>
+                    <td>
+                      Possui
+                    </td>
+                    <td rowspan="2" class="align-middle">
+                      Tabela para registro dos endereços dos alunos.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Tipo_Logradouro
+                    </td>
+                    <td>
+                      É do tipo
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      TIPO_LOGRADOURO
+                    </td>
+                    <td class="align-middle">
+                      Endereço_Aluno
+                    </td>
+                    <td class="align-middle">
+                      Compõe
+                    </td>
+                    <td class="align-middle">
+                      Tabela de registro dos tipos de logradouro.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td rowspan="2" class="align-middle">
+                      ALUNO_DISC
+                    </td>
+                    <td>
+                      Aluno
+                    </td>
+                    <td>
+                      Cursa
+                    </td>
+                    <td rowspan="2" class="align-middle">
+                      Tabela associativa entre aluno e disciplina.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td>
+                      Disciplina
+                    </td>
+                    <td>
+                      É cursada
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="card-title mt-5 text-center">Atributos</h5>
+              <table class="table table-sm align-middle">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE DEPARTAMENTO</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_DEPARTAMENTO
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do departamento.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      NOME_DEPARTAMENTO
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      20 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Nome do departamento.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE PROFESSOR</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_PROFESSOR
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do professor.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      NOME_PROFESSOR
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      20 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Nome do professor.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      SOBRENOME_PROFESSOR
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      50 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Sobrenome do professor.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_DEPARTAMENTO
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do departamento.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      STATUS
+                    </td>
+                    <td class="align-middle">
+                      Booleano
+                    </td>
+                    <td class="align-middle">
+                      1 bit
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Status do Professor (Lecionando / não lecionando).
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE CURSO</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_CURSO
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do curso.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      NOME_CURSO
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      40 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Nome do curso.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_DEPARTAMENTO
+                    </td>
+                    <td class="align-middle">
+                      inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do departamento
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE TURMA</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_TURMA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação da turma.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_CURSO
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do curso.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      PERIODO
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      5 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Período da turma (manhã, tarde ou noite).
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      NUM_ALUNOS
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Número de alunos matriculados na turma.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      DATA_INICIO
+                    </td>
+                    <td class="align-middle">
+                      Data
+                    </td>
+                    <td class="align-middle">
+                      4 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Data de início da turma.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      DATA_FIM
+                    </td>
+                    <td class="align-middle">
+                      Data
+                    </td>
+                    <td class="align-middle">
+                      4 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Data de fim da turma.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE ALUNO</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      RA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      6 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      NOME_ALUNO
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      20 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Nome do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      SOBRENOME_ALUNO
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      50 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Sobrenome do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      CPF
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      11 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL, UNIQUE
+                    </td>
+                    <td class="align-middle">
+                      CPF do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      STATUS
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      1 byte
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Status da matrícula.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_TURMA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação da turma.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_CURSO
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do curso.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      SEXO
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      1 byte
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Sexo do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      NOME_PAI
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      80 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Nome do Pai do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      NOME_MÃE
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      80 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Nome da Mãe do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      EMAIL
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      60 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      E-mail do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      WHATSAPP
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      11 bytes
+                    </td>
+                    <td class="align-middle">
+                      NULL
+                    </td>
+                    <td class="align-middle">
+                      Whatsapp do aluno.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE DISCIPLINA</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_DISCIPLINA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação da disciplina.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      NOME_DISCIPLINA
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      30 bytes
+                    </td>
+                    <td class="align-middle">
+                      FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Nome da disciplina.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      DESCRIÇÃO
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      200 bytes
+                    </td>
+                    <td class="align-middle">
+                      NULL
+                    </td>
+                    <td class="align-middle">
+                      Descrição.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_DEPARTAMENTO
+                    </td>
+                    <td class="align-middle">
+                      inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do departamento
+                    </td>
+                    <tr class="text-center">
+                      <td class="align-middle">
+                        CARGA_HORARIA
+                      </td>
+                      <td class="align-middle">
+                        Inteiro
+                      </td>
+                      <td class="align-middle">
+                        2 bytes
+                      </td>
+                      <td class="align-middle">
+                        NOT NULL
+                      </td>
+                      <td class="align-middle">
+                        Duração da disciplina.
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <td class="align-middle">
+                        NUM_ALUNOS
+                      </td>
+                      <td class="align-middle">
+                        Inteiro
+                      </td>
+                      <td class="align-middle">
+                        2 bytes
+                      </td>
+                      <td class="align-middle">
+                        NOT NULL
+                      </td>
+                      <td class="align-middle">
+                        Número de alunos matriculados na dsiciplina.
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE HISTÓRICO</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_HISTORICO
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do histórico.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      RA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      6 bytes
+                    </td>
+                    <td class="align-middle">
+                      FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      DATA_INICIO
+                    </td>
+                    <td class="align-middle">
+                      Data
+                    </td>
+                    <td class="align-middle">
+                      4 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Data inicial do curso.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      DATA_FIM
+                    </td>
+                    <td class="align-middle">
+                      Data
+                    </td>
+                    <td class="align-middle">
+                      4 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Data em que o aluno finalizou o curso.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE DISC_HIST</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_HISTORICO
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do histórico.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_DISCIPLINA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação da disciplina.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      NOTA
+                    </td>
+                    <td class="align-middle">
+                      Decimal
+                    </td>
+                    <td class="align-middle">
+                      8 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Nota da disciplina.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      FREQUÊNCIA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Número de faltas na disciplina.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE CURSO_DISCIPLINA</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_CURSO
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do curso.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_DISCIPLINA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação da disciplina.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE PROF_DISCIPLINA</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_PROFESSOR
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do professor.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_DISCIPLINA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação da disciplina.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE ALUNO_DISC</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      RA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      6 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_DISCIPLINA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação da disciplina.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE ENDEREÇO_ALUNO</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_ENDEREÇO
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      1 byte
+                    </td>
+                    <td class="align-middle">
+                      PK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do endereço do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      RA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      6 bytes
+                    </td>
+                    <td class="align-middle">
+                      PK, FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_TIPO_LOGRADOURO
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      1 byte
+                    </td>
+                    <td class="align-middle">
+                      FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código do tipo logradouro.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      NOME_RUA
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      50 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Nome da rua.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      NUM_RUA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      2 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Numero do imóvel.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COMPLEMENTO
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      20 bytes
+                    </td>
+                    <td class="align-middle">
+                      NULL
+                    </td>
+                    <td class="align-middle">
+                      Complemento.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      CEP
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      8 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      CEP da Rua.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE TIPO_LOGRADOURO</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_TIPO_LOGRADOURO
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      1 byte
+                    </td>
+                    <td class="align-middle">
+                      PK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do tipo de logradouro.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      TIPO_LOGRADOURO
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      10 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Nome do Tipo de Logradouro.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE TELEFONES_ALUNO</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_TELEFONE_ALUNO
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      1 byte
+                    </td>
+                    <td class="align-middle">
+                      PK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do telefone do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      RA
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      6 bytes
+                    </td>
+                    <td class="align-middle">
+                      FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      RA do aluno.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_TIPO_TELEFONE
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      1 byte
+                    </td>
+                    <td class="align-middle">
+                      FK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do tipo de telefone.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      TELEFONE
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      11 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Número do telefone.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-sm align-middle mt-5">
+                <thead>
+                  <tr>
+                    <th class="text-center" colspan="5">ENTIDADE TIPO_TELEFONE</th>
+                  </tr>
+                  <tr class="text-center">
+                    <th class="align-middle">Atributo</th>
+                    <th class="align-middle">Tipos de dados</th>
+                    <th class="align-middle">Comprimento</th>
+                    <th class="align-middle">Restrições</th>
+                    <th class="align-middle">Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      COD_TIPO_TELEFONE
+                    </td>
+                    <td class="align-middle">
+                      Inteiro
+                    </td>
+                    <td class="align-middle">
+                      1 byte
+                    </td>
+                    <td class="align-middle">
+                      PK, NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Código de identificação do tipo de telefone.
+                    </td>
+                  </tr>
+                  <tr class="text-center">
+                    <td class="align-middle">
+                      TIPO_TELEFONE
+                    </td>
+                    <td class="align-middle">
+                      Caractere
+                    </td>
+                    <td class="align-middle">
+                      12 bytes
+                    </td>
+                    <td class="align-middle">
+                      NOT NULL
+                    </td>
+                    <td class="align-middle">
+                      Nome do tipo de telefone.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="alert alert-dark text-center mt-3" role="alert">
-              <h5><b>8</b> Testes Básicos</h5>
+              <h5><b>7</b> Implementação do Banco de dados</h5>
             </div>
-            <div>
-              <a href="http://" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
+            <div class="ml-3">
+              <div class="card-text">
+                Para criação do banco de dados a nível de implementação usamos linguagem SQL (Standard Query Language), portanto segue abaixo todos scripts para criação e alterações de tabelas para que o banco de dados se torne funcional.
+              </div>
+              <div class="mt-3">
+                <h5 class="card-title text-center">Criar Banco</h5>
+                <pre>
+                  CREATE DATABASE db_Faculdade;
+                  USE db_Faculdade;
+                </pre>
+              </div>
+              <div class="mt-3">
+                <h5 class="card-title text-center">Criar Tabelas</h5>
+                <pre>
+                  CREATE TABLE Departamento (
+                  Cod_Departamento INT PRIMARY KEY AUTO_INCREMENT,
+                  Nome_departamento VARCHAR(20) NOT NULL
+                  );
+
+                  CREATE TABLE Professor (
+                  Cod_Professor INT PRIMARY KEY AUTO_INCREMENT,
+                  Nome_Professor VARCHAR(20) NOT NULL,
+                  Sobrenome_Professor VARCHAR(50) NOT NULL,
+                  Status_Professor TINYINT,
+                  Cod_Departamento INT,
+                  CONSTRAINT fk_Codigo_departamento FOREIGN KEY(Cod_Departamento) 
+                  REFERENCES Departamento (Cod_Departamento)
+                  );
+
+                  CREATE TABLE Curso (
+                  Cod_Curso INT PRIMARY KEY AUTO_INCREMENT,
+                  Nome_Curso VARCHAR(30),
+                  Cod_Departamento INT,
+                  CONSTRAINT fk_Cod_Departamento FOREIGN KEY (Cod_Departamento) 
+                  REFERENCES Departamento (Cod_Departamento)
+                  );
+
+                  CREATE TABLE Turma (
+                  Cod_Turma INT PRIMARY KEY AUTO_INCREMENT,
+                  Cod_Curso INT,
+                  Periodo VARCHAR(8),
+                  Num_Alunos INT,
+                  Data_Inicio DATE,
+                  Data_Fim DATE,
+                  CONSTRAINT fk_Cod_Curso FOREIGN KEY (Cod_Curso) 
+                  REFERENCES Curso (Cod_Curso)
+                  );
+
+                  CREATE TABLE Disciplina (
+                  Cod_Disciplina INT PRIMARY KEY AUTO_INCREMENT,
+                  Cod_Disciplina_Depende INT NULL, /* Auto-relacionamento */
+                  Nome_Disciplina VARCHAR(30),
+                  Cod_Departamento INT NOT NULL,
+                  Carga_Horaria INT NOT NULL,
+                  Descrição VARCHAR(80),
+                  Num_Alunos INT NOT NULL,
+                  CONSTRAINT fk_Cod_Departamento_Disciplina FOREIGN KEY (Cod_Departamento) 
+                  REFERENCES Departamento (Cod_Departamento),
+                  CONSTRAINT fk_Cod_Disciplina FOREIGN KEY (Cod_Disciplina_Depende) 
+                  REFERENCES Disciplina (Cod_Disciplina)
+                  );
+
+                  CREATE TABLE Prof_Disciplina (
+                  Cod_Professor INT NOT NULL,
+                  Cod_Disciplina INT NOT NULL,
+                  PRIMARY KEY (Cod_Professor, Cod_Disciplina), 
+                  CONSTRAINT fk_Cod_Professor_Prof FOREIGN KEY (Cod_Professor) 
+                  REFERENCES Professor (Cod_Professor),
+                  CONSTRAINT fk_Cod_Disciplina_Prof FOREIGN KEY (Cod_Disciplina) 
+                  REFERENCES Disciplina (Cod_Disciplina)
+                  );
+
+                  CREATE TABLE Curso_Disciplina (
+                  Cod_Curso INT NOT NULL,
+                  Cod_Disciplina INT NOT NULL,
+                  PRIMARY KEY (Cod_Curso, Cod_Disciplina), 
+                  CONSTRAINT fk_Cod_Curso_Disci FOREIGN KEY (Cod_Curso) 
+                  REFERENCES Curso (Cod_Curso),
+                  CONSTRAINT fk_Cod_Disciplina_Disci FOREIGN KEY (Cod_Disciplina) 
+                  REFERENCES Disciplina (Cod_Disciplina)
+                  );
+
+                  CREATE TABLE Aluno (
+                  RA INT PRIMARY KEY AUTO_INCREMENT,
+                  Nome_Aluno VARCHAR(20) NOT NULL,
+                  Sobrenome_Aluno VARCHAR(20) NOT NULL,
+                  CPF VARCHAR(11) NOT NULL,
+                  Status_Aluno TINYINT(1) NOT NULL,
+                  Cod_Turma INT,
+                  Sexo VARCHAR(1),
+                  Cod_Curso INT,
+                  Nome_Pai VARCHAR(50) NOT NULL,
+                  Nome_Mae VARCHAR(50) NOT NULL,
+                  Email VARCHAR(50) NOT NULL,
+                  Whatsapp VARCHAR(20) NOT NULL,
+                  CONSTRAINT fk_Cod_Turma_Aluno FOREIGN KEY(Cod_Turma) 
+                  REFERENCES Turma (Cod_Turma),
+                  CONSTRAINT fk_Cod_Curso_Aluno FOREIGN KEY(Cod_Curso) 
+                  REFERENCES Curso (Cod_Curso)
+                  );
+
+                  CREATE TABLE Aluno_Disc (
+                  RA INT NOT NULL,
+                  Cod_Disciplina INT NOT NULL,
+                  PRIMARY KEY (RA, Cod_Disciplina),
+                  CONSTRAINT fk_RA_Aluno FOREIGN KEY (RA) 
+                  REFERENCES Aluno (RA),
+                  CONSTRAINT fk_Cod_Disciplina_Aluno FOREIGN KEY (Cod_Disciplina) 
+                  REFERENCES Disciplina (Cod_Disciplina)
+                  );
+
+                  CREATE TABLE Historico (
+                  Cod_Historico INT PRIMARY KEY AUTO_INCREMENT,
+                  RA INT NOT NULL,
+                  Data_Inicio DATE NOT NULL,
+                  Data_Final DATE,
+                  CONSTRAINT fk_Cod_RA FOREIGN KEY (RA) REFERENCES Aluno (RA)
+                  );
+
+                  CREATE TABLE Disc_Hist (
+                  Cod_Historico INT NOT NULL,
+                  Cod_Disciplina INT NOT NULL,
+                  Nota INT,
+                  Frequência INT,
+                  PRIMARY KEY (Cod_Historico, Cod_Disciplina), 
+                  CONSTRAINT fk_Cod_Historico FOREIGN KEY (Cod_Historico) 
+                  REFERENCES Historico (Cod_Historico),
+                  CONSTRAINT fk_Cod_Disciplina_Hist FOREIGN KEY (Cod_Disciplina) 
+                  REFERENCES Disciplina (Cod_Disciplina)
+                  );
+
+                  CREATE TABLE Tipo_Telefone(
+                  Cod_Tipo_Telefone INT PRIMARY KEY AUTO_INCREMENT,
+                  Tipo_Telefone VARCHAR(8)
+                  );
+
+                  CREATE TABLE Telefones_Aluno (
+                  Cod_Telefones_Aluno INT PRIMARY KEY AUTO_INCREMENT,
+                  RA INT NOT NULL,
+                  Cod_Tipo_Telefone INT NOT NULL,
+                  Num_Telefone VARCHAR(20) NOT NULL,
+                  CONSTRAINT fk_Cod_RA_Tel FOREIGN KEY (RA) REFERENCES Aluno (RA),
+                  CONSTRAINT fk_Cod_Tipo_Telefone FOREIGN KEY (Cod_Tipo_Telefone) 
+                  REFERENCES Tipo_Telefone (Cod_Tipo_Telefone)
+                  );
+
+                  CREATE TABLE Tipo_Logradouro (
+                  Cod_Tipo_Logradouro INT PRIMARY KEY AUTO_INCREMENT,
+                  Tipo_Logradouro VARCHAR(11)
+                  );
+
+                  CREATE TABLE Endereco_Aluno (
+                  Cod_Endereco_Aluno INT PRIMARY KEY AUTO_INCREMENT,
+                  RA INT NOT NULL,
+                  Cod_Tipo_Logradouro INT NOT NULL,
+                  Nome_Rua VARCHAR(50) NOT NULL,
+                  Num_Rua INT NOT NULL,
+                  Complemento VARCHAR(20) NULL,
+                  CEP VARCHAR(8) NOT NULL,
+                  CONSTRAINT fk_Cod_RA_End FOREIGN KEY(RA) REFERENCES Aluno (RA),
+                  CONSTRAINT fk_Cod_Tipo_Lougradouro FOREIGN KEY(Cod_Tipo_Logradouro) 
+                  REFERENCES Tipo_Logradouro (Cod_Tipo_Logradouro)
+                  );
+                </pre>
+              </div>
+              <div class="mt-3">
+                <h5 class="card-title text-center">Alterar Tabela</h5>
+                <pre>
+                  ALTER TABLE Disc_Hist
+                  MODIFY COLUMN NOTA FLOAT(4,2);
+                </pre> 
+            </div>
+            <div class="alert alert-dark text-center mt-3" role="alert">
+              <h5><b>8</b> Testes básicos</h5>
+            </div>
+            <div class="ml-3">
+              <div class="card-text">
+                Para testes do banco de dados realizaremos inserts(inserções de dados no banco) e selects (consultas).
+              </div>
+              <div class="mt-3">
+                <h5 class="card-title text-center">inserir Dados</h5>
+                <pre>
+                  INSERT INTO Departamento (Nome_Departamento) VALUES
+                  ('Ciências Humanas'),
+                  ('Matemática'),
+                  ('Biológicas'),
+                  ('Estágio');
+
+                  INSERT INTO Professor (Nome_Professor, Sobrenome_Professor, 
+                  Status_Professor, Cod_Departamento) VALUES
+                  ('Fábio', 'dos Reis', 0, 2),
+                  ('Sophie', 'Allemand', 1, 1),
+                  ('Monica', 'Barroso', 1, 3);
+
+                  INSERT INTO Curso (Nome_Curso, Cod_Departamento) VALUES
+                  ('Matemática', 2),
+                  ('Psicologia', 1),
+                  ('Análise de Sistemas', 2),
+                  ('Biologia', 3),
+                  ('História', 1),
+                  ('Engenharia', 2);
+
+                  INSERT INTO Turma (Cod_Curso, Periodo, Num_Alunos, Data_Inicio, 
+                  Data_Fim) VALUES
+                  (2, 'Manhã', 20, '2016-05-12', '2017-10-15'),
+                  (1, 'Noite', 10, '2014-05-12', '2020-03-05'),
+                  (3, 'Tarde', 15, '2012-05-12', '2014-05-10');
+
+                  INSERT INTO Disciplina (Nome_Disciplina, Cod_Departamento, 
+                  Carga_Horaria, Descrição, Num_Alunos) VALUES
+                  ('Raciocínio Lógico', 2, 1200, 'Desenvolver o raciocínio lógico', 50),
+                  ('Psicologia Cognitiva', 1, 1400, 'Entender o funcionamento do aprendizado', 30),
+                  ('Programação em C', 2, 1200, 'Aprender uma linguagem de programação', 20),
+                  ('Eletrônica Digital', 2, 300, 'Funcionamento de circuitos digitais', 30);
+
+                  INSERT INTO Aluno (Nome_Aluno, Sobrenome_Aluno, CPF, Status_Aluno, 
+                  Cod_Turma, Sexo, Cod_Curso, Nome_Pai, Nome_Mae, Email, Whatsapp) VALUES
+                  ('Marcos', 'Aurelio Martins', 14278914536, 1, 2, 'M', 3, 
+                  'Marcio Aurelio', 'Maria Aparecida', 'marcosaurelio@gmail.com', 946231249),
+                  ('Gabriel', 'Fernando de Almeida', 14470954536, 1, 1, 'M', 
+                  1, 'Adão Almeida', 'Fernanda Almeida', 'gabrielalmeida@yahoo.com', 941741247),
+                  ('Beatriz', 'Sonia Meneguel', 1520984537, 1, 3, 'F', 3, 
+                  'Samuel Meneguel', 'Gabriella Meneguel', 'batrizmene@hotmail.com', 945781412),
+                  ('Jorge', 'Soares', 14223651562, 1, 3, 'M', 4, 'João Soares', 
+                  'Maria Richter', 'jorgesoares@gmail.com', 925637857),
+                  ('Ana Paula', 'Ferretti', 32968914522, 1, 3, 'F', 5, 'Marcio Ferretti', 
+                  'Ana Hoffbahn', 'anapaulaferretti@hotmail.com', 974267423),
+                  ('Mônica', 'Yamaguti', 32988914510, 1, 2, 'F', 6, 'Wilson Oliveira', 
+                  'Fernanda Yamaguti', 'monyamaguti@outlook.com', 932619560);
+
+                  INSERT INTO Aluno_Disc (RA, Cod_Disciplina) VALUES
+                  (3, 1),
+                  (1, 2),
+                  (2, 3),
+                  (4, 3),
+                  (5, 4),
+                  (6, 1);
+
+                  INSERT INTO Curso_Disciplina(Cod_Curso, Cod_Disciplina) VALUES
+                  (1, 1),
+                  (2, 2),
+                  (3, 3),
+                  (6, 4);
+
+                  INSERT INTO Prof_Disciplina(Cod_Professor, Cod_Disciplina) VALUES
+                  (2, 1),
+                  (1, 2),
+                  (3, 3),
+                  (2, 4);
+
+                  INSERT INTO Historico (RA, Data_Inicio, Data_Final) VALUES
+                  (2, '2016-05-12', '2017-10-15'),
+                  (3, '2014-05-12', '2020-03-05'),
+                  (1, '2010-05-12', '2012-05-10');
+
+                  INSERT INTO Tipo_Logradouro (Tipo_Logradouro) VALUES
+                  ('Rua'),
+                  ('Avenida'),
+                  ('Alameda'),
+                  ('Travessa');
+
+                  INSERT INTO Endereco_Aluno (RA, Cod_Tipo_Logradouro, Nome_Rua, 
+                  Num_Rua, Complemento, CEP) VALUES
+                  (2, 1, 'das Giestas', 255, 'Casa 02', 02854000),
+                  (3, 3, 'Lorena', 10, 'Apto 15', 02945000),
+                  (1, 2, 'do Cursino', 1248, '', 0851040),
+                  (4, 1, 'das Heras', 495, '', 03563142),
+                  (5, 3, 'Santos', 1856, '', 04523963),
+                  (6, 4, 'Matão', 206, '', 04213650);
+
+                  INSERT INTO Disc_Hist (Cod_Historico, Cod_Disciplina, Nota, Frequência)
+                  VALUES
+                  (1, 2, 7, 6), -- Marcos - Psicologia Cognitiva (cod 2)
+                  (2, 3, 8.5, 2), -- Beatriz - Programação em C (cod 3)
+                  (3, 1, 6.8, 8); -- Gabriel - Raciocínio Lógico (cod 1)
+                  
+                  INSERT INTO Tipo_Telefone (Tipo_Telefone) VALUES
+                  ('Res'),
+                  ('Com'),
+                  ('Cel'),
+                  ('Rec');
+
+                  INSERT INTO Telefones_Aluno (RA, Cod_Tipo_Telefone, Num_Telefone)
+                  VALUES
+                  (1, 1, 28467853),
+                  (2, 1, 24653298),
+                  (2, 3, 996324521),
+                  (3, 1, 36549875),
+                  (3, 3, 994532165),
+                  (4, 1, 21956345),
+                  (4, 3, 986321452),
+                  (5, 1, 24569832),
+                  (5, 2, 23854696),
+                  (6, 1, 27698753);
+                </pre>
+              </div>
+              <div class="mt-3">
+                <h5 class="card-title text-center">Consultar Dados</h5>
+                <pre>
+                  SELECT A.RA, A.Nome_Aluno, A.Sobrenome_Aluno, T.Periodo, C.Nome_Curso
+                  FROM Aluno A
+                  INNER JOIN Curso C
+                  ON C.Cod_Curso = A.Cod_Curso
+                  INNER JOIN Turma T
+                  ON A.Cod_Turma = T.Cod_Turma
+                  ORDER BY A.Nome_Aluno;
+                  
+                  SELECT A.Nome_Aluno, A.Sobrenome_Aluno, D.Nome_Disciplina, DH.Nota
+                  FROM Aluno A
+                  INNER JOIN Aluno_Disc AD
+                  ON A.RA = AD.RA
+                  INNER JOIN Disciplina D
+                  ON D.Cod_Disciplina = AD.Cod_Disciplina
+                  INNER JOIN Historico H
+                  ON A.RA = H.RA
+                  INNER JOIN Disc_Hist DH
+                  ON H.Cod_Historico = DH.Cod_Historico
+                  WHERE A.RA = 3;
+                  
+                  SELECT CONCAT(P.Nome_Professor, ' ', P.Sobrenome_Professor) AS Docente,
+                  D.Nome_Disciplina, D.Carga_Horaria
+                  FROM Professor P
+                  INNER JOIN Prof_Disciplina PD
+                  ON P.Cod_Professor = PD.Cod_Professor
+                  INNER JOIN Disciplina D
+                  ON D.Cod_Disciplina = PD.Cod_Disciplina
+                  ORDER BY D.Nome_Disciplina;
+                  
+                  SELECT CONCAT(A.Nome_Aluno, ' ', A.Sobrenome_Aluno) 
+                  AS Aluno, A.CPF, T.Num_Telefone, CONCAT(TL.Tipo_Logradouro, ' ', E.Nome_Rua, ', ', E.Num_Rua)
+                  AS Logradouro, E.Complemento, E.CEP
+                  FROM Aluno A
+                  INNER JOIN Telefones_Aluno T
+                  ON A.RA = T.RA
+                  INNER JOIN Endereco_Aluno E
+                  ON A.RA = E.RA
+                  INNER JOIN Tipo_Logradouro TL
+                  ON TL.Cod_Tipo_Logradouro = E.Cod_Tipo_Logradouro;
+                  
+                  SELECT Di.Nome_Disciplina, C.Nome_Curso,
+                  CONCAT(P.Nome_Professor, ' ', P.Sobrenome_Professor) 
+                  AS Docente, De.Nome_Departamento
+                  FROM Disciplina Di
+                  INNER JOIN Departamento De
+                  ON Di.Cod_Departamento = De.Cod_Departamento
+                  INNER JOIN Prof_Disciplina PD
+                  ON Di.Cod_Disciplina = PD.Cod_Disciplina
+                  INNER JOIN Professor P
+                  ON P.Cod_Professor = PD.Cod_Professor
+                  INNER JOIN Curso_Disciplina CD
+                  ON Di.Cod_Disciplina = CD.Cod_Disciplina
+                  INNER JOIN Curso C
+                  ON C.Cod_Curso = CD.Cod_Curso
+                  ORDER BY Di.Nome_Disciplina;
+                </pre>
             </div>
           </div>
         </div>
+      </div>
+      </div>
       <!--FIM CARD-->
 
-        
-  
-
-
+      <!--INICIO CARD-->
+      <div class="card mt-3">
+        <div class="card-header">
+          <a href="#" target="_blank">Conclusão</a>
+        </div>
+        <div class="card-body">
+          <div class="ml-3">
+            <div class="card-text">
+              Basicamente foi criado este doc para acompanhar o curso, como forma de contribuição para novos estudantes, como forma de praticar o uso do html + bootstrapp.
+            </div>
+            <div class="card-text mt2">
+              É nítido a necesidade da modelagem de dados para sistemas, pois além de elevar a qualidade do código dos programadores, cria uma visão sistêmica de toda aplicação, cria uma compreensão melhor do trabalho do time de Dados e Infra. além de tudo isso ainda capacita o programador a se tornar independente, Ter autonomia para ir além, desenvolvendo sistemas completos sozinho! <br> 
+              Agradeço ao professor Fábio dos Reis, pela qualidade,  e contribuição para que todos possam aprender mais sobre o mundo da tecnologia, pois o curso inteiro está no youtube para que todos possam se capacitar.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--FIM CARD-->
+      
           <div class="mb-5"></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
