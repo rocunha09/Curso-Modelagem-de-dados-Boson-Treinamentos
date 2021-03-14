@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
       body{
-        background-color: #959596;
+        background-color: #292929;
       }
       .borda{
         border: 1px solid black;
@@ -16,186 +16,200 @@
       .imagem {
         max-width: 100%;
       }
+
+      .alignCollapse{
+        float: right;
+      }
     </style>
     
 </head>
 <body>
-    <div class="container ">
-        <div class="row">
+    <div class="container">
+        <div class="row  text-white text-center">
             <div class="col">
                 <h1>Modelagem de Dados</h1>
                 <h2>Bóson Treinamentos</h2>
                 <h4>Anotações dos estudos do curso.</h4>
             </div>
         </div>
+    <div id="accordion">
       <!--INÍCIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingOne">
             <a target="_blank" href="https://youtu.be/hGstS10kCPM">O Modelo Relacional</a>
+            <button class="btn btn-link alignCollapse" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <b>Ver</b>
+            </button>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Modelos:</h5>
-            <div class="ml-3">
-              <ul>
-                <li>
-                  Um modelo é uma estrutura que ajuda a comunicaros conceitos que estão na mente do projetista. Podemos usá-los para tarefas como descrever, analisar, especificar, e comunicar ideias.
-                </li>
-                <li>
-                  O modelo deve possuir detalhes suficientes para que um desenvolvedor consiga construir o banco de dados de acordo com a necessidade do projeto. 
-                </li>
-              </ul>
-            </div>
-            <h5 class="card-title mt-2">Modelagem de Dados</h5>
-            <div class="ml-3">
-              <ul>
-                <li>
-                  Modelagem de Dados é o processo de criação de um Modelo de Dados para um sistema de informação, com a aplicação de técnicas específicas de modelagem.
-                </li>
-                <li>
-                  Trata-se de processos para definir e analisar requisitos de dados necessários para suportar processos de negócio com sistemas informatizados em organizações.
-                </li>
-                <li>
-                  Um modelo de dados fornece uma estrutura para os dados usados em um SI, com definições e formatos específicos.
-                </li>
-              </ul>
-            </div>
-            <h5 class="card-title mt-2">Modelos de Dados</h5>
-            <div class="ml-3">
-              <ul>
-                <li>
-                  Hierárquico;
-                </li>
-                <li>
-                  Rede;
-                </li>
-                <li>
-                  <b>Relacional;</b>
-                </li>
-                <li>
-                  Orientado a Objeto;
-                </li>
-                <li>
-                  Não-Relacional;
-                </li>
-              </ul>
-              <h5>Modelo Relacional:</h5>
-              <div class="card-text">
-                Os princípios do modelo relacional foram esboçados por E.F. Codd(IBM) em um artigo publicado em junho de 1970, intitulado "A relational model of data for large shared data banks", no qual Dr. Codd propôs o modelo relacional para sistemas de bancos de dados. <br>
-                Antes disso eram usados modelos como o hierárquico e o modelo em rede.
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <h5 class="card-title">Modelos:</h5>
+              <div class="ml-3">
+                <ul>
+                  <li>
+                    Um modelo é uma estrutura que ajuda a comunicaros conceitos que estão na mente do projetista. Podemos usá-los para tarefas como descrever, analisar, especificar, e comunicar ideias.
+                  </li>
+                  <li>
+                    O modelo deve possuir detalhes suficientes para que um desenvolvedor consiga construir o banco de dados de acordo com a necessidade do projeto. 
+                  </li>
+                </ul>
               </div>
-              <ul>
-                <li>
-                  No modelo relacional os dados são organizados em coleções de tabelas bidimensionais.
-                </li>
-                <li>
-                  Essas tabelas são também chamadas de "Relações".
-                </li>
-                <li>
-                  Relação é uma forma de se organizar os dados em linhas e colunas.
-                </li>
-                <li>
-                  Baseados em lógica e teoria de conjunto.
-                </li>
-              </ul>
-            </div>       
-            <h5 class="card-title mt-2">Componentes do Modelo Relacional</h5>   
-            <div class="ml-3">
-              <div class="card-text">
-                O modelo relacional é composto basicamente, por:
+              <h5 class="card-title mt-2">Modelagem de Dados</h5>
+              <div class="ml-3">
+                <ul>
+                  <li>
+                    Modelagem de Dados é o processo de criação de um Modelo de Dados para um sistema de informação, com a aplicação de técnicas específicas de modelagem.
+                  </li>
+                  <li>
+                    Trata-se de processos para definir e analisar requisitos de dados necessários para suportar processos de negócio com sistemas informatizados em organizações.
+                  </li>
+                  <li>
+                    Um modelo de dados fornece uma estrutura para os dados usados em um SI, com definições e formatos específicos.
+                  </li>
+                </ul>
               </div>
-              <ul>
-                <li>
-                  Coleções de Objetos ou relações que armazenam os dados.
-                </li>
-                <li>
-                  Um conjunto de operadores que agem nas relações, produzindo outras relações.
-                </li>
-                <li>
-                  Integridade de dados, para precisão e consistência.
-                </li>
-              </ul>
-            </div>
-            <h5 class="card-title mt-2">Componentes do Modelo Relacional</h5>
-            <div class="card-text">
-              O modelo relacional é composto, basicamente, por:
-            </div>
-            <div class="ml-3">
-              <ul>
-                <li>
-                  Coleções de objetos ou relações que armazenam os dados;
-                </li>
-                <li>
-                  Um conjunto de operadores que agem nas relações, produzindo outras relações;
-                </li>
-                <li>
-                  Integridade de dados, para precisão e consistência;
-                </li>
-              </ul>
-            </div>
-            <h5 class="card-title mt-2">Banco de dados Relacional</h5>
-            <div class="ml-3">
-              <ul>
-                <li>
-                  Um banco de dados relacional é uma coleção de relações, que são tabelas bidimensionais, onde os dados são armazenados;
-                </li>
-                <li>
-                  Como por exemplo, podemos querer armazenar dados sobre os clientes de uma loja. para isso criamos tabelas para guardar diferentes conjuntos de dados relacionados a esses clientes, como dados pessoais, dados de compras, crédito, e outros;
-                </li>
-              </ul>
-            </div>
-            <h5 class="card-title mt-2">Componentes de um Banco de dados Relacional</h5>
-            <div class="ml-3">
-              <ul>
-                <li>
-                  <b>Tabela: </b>Estrutura básica de armazenamento no SGBD. Armazena todos os dados necessários sobre algo no mundo real, como clientes, pedidos ou produtos. também cbamada de relação. Um banco de dados relacional pode conter uma ou mais tabelas;
-                </li>
-                <li>
-                  <b>Tupla: </b>ou Linha / Registro, representa todos os dados requeridos por uma determinada ocorrência de entidade particular. Por exemplo, os dados de um cliente específico. Cada linha em uma tabela deve ser identificada por uma chave primária, de modo a não haver duplicação de registros;
-                </li>
-                <li>
-                  <b>Coluna: </b>Unidade que armazena um tipo específico de dado(Valor) - ou não armazena nada, com valor nulo. Esta é uma coluna não chave, significando que seu valor pode se repetir em outras linhasda tabela;
-                </li>
-                <li>
-                  <b>Relacionamento: </b>Associação entre as entidades(tabelas), conectadas por chave primárias e chaves estrangeiras.
-                </li>
-                <li>
-                  <b>Outros: </b>Índices, SP, Triggers, etc.
-                </li>
-                <li>
-                  <b>Chave primária: </b>Coluna(atributo) que identifica um registro de forma exclusiva na tabela. Por exemplo, o CPF de um cliente, contendo um valor que não se repete na relação.
-                </li>
-                <li>
-                  <b>Chave Estrangeira: </b>Coluna que define como as tabelas se relacionam umas com as outras. uma FK se refere a uma PK ou a uma chave única em outra tabela(ou na mesma tabela!). Por exemplo: na tabela de pedidos podemos ter uma chave estrangeira efetuando o relacionamento com a chave primária na tabela clientes.
-                </li>
-              </ul>
-            </div>
-            <h5 class="card-title mt-2">Análise de Requisitos</h5>
-            <div class="ml-3">
-              <ul>
-                <li>
-                  Nesta fase, são realizadas reuniões para coleta de informações, que analisam o que é exigido para o banco de dados a ser criado;
-                </li>
-                <li>
-                  Os processos de negócio são definidos, e as entidades, atributos e relacionamentos do BD são documentadas;
-                </li>
-                <li>
-                  A Análise é extremamente importante para o sucesso do projeto do BD;
-                </li>
-              </ul>
-            </div>
+              <h5 class="card-title mt-2">Modelos de Dados</h5>
+              <div class="ml-3">
+                <ul>
+                  <li>
+                    Hierárquico;
+                  </li>
+                  <li>
+                    Rede;
+                  </li>
+                  <li>
+                    <b>Relacional;</b>
+                  </li>
+                  <li>
+                    Orientado a Objeto;
+                  </li>
+                  <li>
+                    Não-Relacional;
+                  </li>
+                </ul>
+                <h5>Modelo Relacional:</h5>
+                <div class="card-text">
+                  Os princípios do modelo relacional foram esboçados por E.F. Codd(IBM) em um artigo publicado em junho de 1970, intitulado "A relational model of data for large shared data banks", no qual Dr. Codd propôs o modelo relacional para sistemas de bancos de dados. <br>
+                  Antes disso eram usados modelos como o hierárquico e o modelo em rede.
+                </div>
+                <ul>
+                  <li>
+                    No modelo relacional os dados são organizados em coleções de tabelas bidimensionais.
+                  </li>
+                  <li>
+                    Essas tabelas são também chamadas de "Relações".
+                  </li>
+                  <li>
+                    Relação é uma forma de se organizar os dados em linhas e colunas.
+                  </li>
+                  <li>
+                    Baseados em lógica e teoria de conjunto.
+                  </li>
+                </ul>
+              </div>       
+              <h5 class="card-title mt-2">Componentes do Modelo Relacional</h5>   
+              <div class="ml-3">
+                <div class="card-text">
+                  O modelo relacional é composto basicamente, por:
+                </div>
+                <ul>
+                  <li>
+                    Coleções de Objetos ou relações que armazenam os dados.
+                  </li>
+                  <li>
+                    Um conjunto de operadores que agem nas relações, produzindo outras relações.
+                  </li>
+                  <li>
+                    Integridade de dados, para precisão e consistência.
+                  </li>
+                </ul>
+              </div>
+              <h5 class="card-title mt-2">Componentes do Modelo Relacional</h5>
+              <div class="card-text">
+                O modelo relacional é composto, basicamente, por:
+              </div>
+              <div class="ml-3">
+                <ul>
+                  <li>
+                    Coleções de objetos ou relações que armazenam os dados;
+                  </li>
+                  <li>
+                    Um conjunto de operadores que agem nas relações, produzindo outras relações;
+                  </li>
+                  <li>
+                    Integridade de dados, para precisão e consistência;
+                  </li>
+                </ul>
+              </div>
+              <h5 class="card-title mt-2">Banco de dados Relacional</h5>
+              <div class="ml-3">
+                <ul>
+                  <li>
+                    Um banco de dados relacional é uma coleção de relações, que são tabelas bidimensionais, onde os dados são armazenados;
+                  </li>
+                  <li>
+                    Como por exemplo, podemos querer armazenar dados sobre os clientes de uma loja. para isso criamos tabelas para guardar diferentes conjuntos de dados relacionados a esses clientes, como dados pessoais, dados de compras, crédito, e outros;
+                  </li>
+                </ul>
+              </div>
+              <h5 class="card-title mt-2">Componentes de um Banco de dados Relacional</h5>
+              <div class="ml-3">
+                <ul>
+                  <li>
+                    <b>Tabela: </b>Estrutura básica de armazenamento no SGBD. Armazena todos os dados necessários sobre algo no mundo real, como clientes, pedidos ou produtos. também cbamada de relação. Um banco de dados relacional pode conter uma ou mais tabelas;
+                  </li>
+                  <li>
+                    <b>Tupla: </b>ou Linha / Registro, representa todos os dados requeridos por uma determinada ocorrência de entidade particular. Por exemplo, os dados de um cliente específico. Cada linha em uma tabela deve ser identificada por uma chave primária, de modo a não haver duplicação de registros;
+                  </li>
+                  <li>
+                    <b>Coluna: </b>Unidade que armazena um tipo específico de dado(Valor) - ou não armazena nada, com valor nulo. Esta é uma coluna não chave, significando que seu valor pode se repetir em outras linhasda tabela;
+                  </li>
+                  <li>
+                    <b>Relacionamento: </b>Associação entre as entidades(tabelas), conectadas por chave primárias e chaves estrangeiras.
+                  </li>
+                  <li>
+                    <b>Outros: </b>Índices, SP, Triggers, etc.
+                  </li>
+                  <li>
+                    <b>Chave primária: </b>Coluna(atributo) que identifica um registro de forma exclusiva na tabela. Por exemplo, o CPF de um cliente, contendo um valor que não se repete na relação.
+                  </li>
+                  <li>
+                    <b>Chave Estrangeira: </b>Coluna que define como as tabelas se relacionam umas com as outras. uma FK se refere a uma PK ou a uma chave única em outra tabela(ou na mesma tabela!). Por exemplo: na tabela de pedidos podemos ter uma chave estrangeira efetuando o relacionamento com a chave primária na tabela clientes.
+                  </li>
+                </ul>
+              </div>
+              <h5 class="card-title mt-2">Análise de Requisitos</h5>
+              <div class="ml-3">
+                <ul>
+                  <li>
+                    Nesta fase, são realizadas reuniões para coleta de informações, que analisam o que é exigido para o banco de dados a ser criado;
+                  </li>
+                  <li>
+                    Os processos de negócio são definidos, e as entidades, atributos e relacionamentos do BD são documentadas;
+                  </li>
+                  <li>
+                    A Análise é extremamente importante para o sucesso do projeto do BD;
+                  </li>
+                </ul>
+              </div>
 
 
 
-            <a href="https://images.app.goo.gl/j3hUkGBS6pfdasUM8" class="btn btn-primary" target="_blank">Exemplo</a>
+              <a href="https://images.app.goo.gl/j3hUkGBS6pfdasUM8" class="btn btn-primary" target="_blank">Exemplo</a>
+            </div>
           </div>
         </div>
       <!--FIM CARD-->
       <!--INÍCIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingTwo">
             <a target="_blank" href="https://youtu.be/ZX7EuRWRdZg">Níveis de Modelagem</a>
+            <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <b>Ver</b>
+            </button>
           </div>
-          <div class="card-body">
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
             <h5 class="card-title">Classificamos o processo de modelagem de dados em três níveis:</h5>
             <ul>
                 <li>
@@ -322,83 +336,94 @@
             </ol>
           </div>
             <a href="https://images.app.goo.gl/j3hUkGBS6pfdasUM8" class="btn btn-primary" target="_blank">Exemplo</a>
+            </div>
           </div>
         </div>
       <!--FIM CARD-->
       <!--INÍCIO CARD-->
         <div class="card mt-3">
-            <div class="card-header">
+            <div class="card-header"  id="headingThree">
               <a target="_blank" href="https://youtu.be/W2Z1STnjNJo">Modelo Entidade-Relacionamento</a>
+              <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <b>Ver</b>
+              </button>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">O que é? e Qual seu propósito?</h5>
-              <p class="card-text">
-                Também conhecido como MER, trata-se de um modelo conceitual usado para descrever objetos envolvidos no domínio de um sistema a ser construído, incluíndo seus atributos e relacionamentos.
-              </p>
-              <p class="card-text">
-                O MER permite representar de forma abstrata a estrutura que irá constituir o banco de dados.
-              </p>
-              <p class="card-text">
-                É composto pelos seguintes objetos:
-              </p>
-              <ul>
-                <li>
-                  <b>Entidades: </b>Algo significativo, sobre o qual devemos possuir informações.
-                </li>
-                <li>
-                  <b>Atributos: </b>Algo que descreve ou qualifica uma Entidade.
-                </li>
-                <li>
-                  <b>Relacionamentos: </b>Trata-se de uma relação nomeada entre entidades, co um grau de associação.
-                </li>
-                <li>
-                  <b>Cardinalidade: </b>Significa que cada entidade pode ser ou deve em relação de forma uma e apenas uma ou uma ou mais com outra entidade. [0/N], [1/N], [1/1], [N/N].
-                </li>
-                <li>
-                  <b>Identificador Único(UID): </b>Um identificador único é qualquer combinação de atributos ou relacionamentos que são usados para distinguir ocorrências de uma entidade. Cada ocorrência da entidade deve ser identificável de forma exclusiva.
-                </li>
-              </ul>
-              <p class="card-text">
-                O primeiro passo para construir um banco de dados é fazer o modelo conceitual, e para isso podemos usar o Modelo Entidade-Relacionamento.
-              </p>
-              <p class="card-text">
-                O modelo em si é o MER, mas cria-se um diagrama para que represente o modelo graficamente este chama-se DER. ou seja, um modelo é uma ideia, conceitual e abstrata, já o diagrama é a representação gráfica destas ideias.
-              </p>
-              <p class="card-text">
-                Um modelo entidade-relacionamento é uma maneira sistemática de descrever e definir um processo de negócio.
-              </p>
-              <p class="card-text">
-                O processo é modelado como componentes(entidades) que são ligadas umas às outras por relacionamentos que indicam as dependências entre elas.
-              </p>
-              <p class="card-text">
-                As entidades podem ter várias propriedades(atributos) que as caracterizam.
-              </p>
-              <p class="card-text">
-                Há várias formas para se criar os diagrams, aqui usaremos o <b>padrão de Peter Chen</b> onde:
-              </p>
-              <ul>
-                <li>
-                  Retângulos - Representam entidades;
-                </li>
-                <li>
-                  Elipses - Representam atributos;
-                </li>
-                <li>
-                  Losangos - Representam relacionamentos;
-                </li>
-                <li>
-                  Linhas - Ligam atributos a entidades e entidades a relacionamentos;
-                </li>
-              </ul>
-              <a href="https://images.app.goo.gl/2TuP4mVh7JTN6m6V8" class="btn btn-primary" target="_blank">Exemplo</a>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <h5 class="card-title">O que é? e Qual seu propósito?</h5>
+                <p class="card-text">
+                  Também conhecido como MER, trata-se de um modelo conceitual usado para descrever objetos envolvidos no domínio de um sistema a ser construído, incluíndo seus atributos e relacionamentos.
+                </p>
+                <p class="card-text">
+                  O MER permite representar de forma abstrata a estrutura que irá constituir o banco de dados.
+                </p>
+                <p class="card-text">
+                  É composto pelos seguintes objetos:
+                </p>
+                <ul>
+                  <li>
+                    <b>Entidades: </b>Algo significativo, sobre o qual devemos possuir informações.
+                  </li>
+                  <li>
+                    <b>Atributos: </b>Algo que descreve ou qualifica uma Entidade.
+                  </li>
+                  <li>
+                    <b>Relacionamentos: </b>Trata-se de uma relação nomeada entre entidades, co um grau de associação.
+                  </li>
+                  <li>
+                    <b>Cardinalidade: </b>Significa que cada entidade pode ser ou deve em relação de forma uma e apenas uma ou uma ou mais com outra entidade. [0/N], [1/N], [1/1], [N/N].
+                  </li>
+                  <li>
+                    <b>Identificador Único(UID): </b>Um identificador único é qualquer combinação de atributos ou relacionamentos que são usados para distinguir ocorrências de uma entidade. Cada ocorrência da entidade deve ser identificável de forma exclusiva.
+                  </li>
+                </ul>
+                <p class="card-text">
+                  O primeiro passo para construir um banco de dados é fazer o modelo conceitual, e para isso podemos usar o Modelo Entidade-Relacionamento.
+                </p>
+                <p class="card-text">
+                  O modelo em si é o MER, mas cria-se um diagrama para que represente o modelo graficamente este chama-se DER. ou seja, um modelo é uma ideia, conceitual e abstrata, já o diagrama é a representação gráfica destas ideias.
+                </p>
+                <p class="card-text">
+                  Um modelo entidade-relacionamento é uma maneira sistemática de descrever e definir um processo de negócio.
+                </p>
+                <p class="card-text">
+                  O processo é modelado como componentes(entidades) que são ligadas umas às outras por relacionamentos que indicam as dependências entre elas.
+                </p>
+                <p class="card-text">
+                  As entidades podem ter várias propriedades(atributos) que as caracterizam.
+                </p>
+                <p class="card-text">
+                  Há várias formas para se criar os diagrams, aqui usaremos o <b>padrão de Peter Chen</b> onde:
+                </p>
+                <ul>
+                  <li>
+                    Retângulos - Representam entidades;
+                  </li>
+                  <li>
+                    Elipses - Representam atributos;
+                  </li>
+                  <li>
+                    Losangos - Representam relacionamentos;
+                  </li>
+                  <li>
+                    Linhas - Ligam atributos a entidades e entidades a relacionamentos;
+                  </li>
+                </ul>
+                <a href="https://images.app.goo.gl/2TuP4mVh7JTN6m6V8" class="btn btn-primary" target="_blank">Exemplo</a>
+              </div>
             </div>
         </div>
       <!--FIM CARD-->
       <!--INÍCIO CARD-->
         <div class="card mt-3">
-            <div class="card-header">
+            <div class="card-header" id="headingFour">
               <a target="_blank" href="https://youtu.be/poeUGQl52YI">Entidades</a>
-            </div>
+            
+            <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <b>Ver</b>
+        </button>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
             <div class="card-body">
               <h5 class="card-title">O que são entidades?</h5>
               <div class="ml-3">
@@ -506,14 +531,20 @@
                 </div>
               </div>
               <a href="https://images.app.goo.gl/jZge6iGM17zQsLzV6" class="btn btn-primary" target="_blank">Exemplo</a>
-            </div>
+              </div>
         </div>
+          </div>
       <!--FIM CARD-->
       <!--INÍCIO CARD-->
           <div class="card mt-3">
-            <div class="card-header">
+            <div class="card-header" id="headingFive">
               <a target="_blank" href="https://youtu.be/59TZc_vRpcQ">Atributos</a>
-            </div>
+            
+            <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          <b>Ver</b>
+        </button>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
             <div class="card-body">
               <h5 class="card-title">O que são tributos?</h5>
               <div class="ml-3">
@@ -590,14 +621,20 @@
                 </ul>
               </div>
               <a href="https://images.app.goo.gl/h1Uhs8HUyoWnugMh7" class="btn btn-primary" target="_blank">Exemplo</a>
-            </div>
+              </div>
+          </div>
           </div>
       <!--FIM CARD-->
       <!--INÍCIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingSix">
             <a target="_blank" href="https://youtu.be/CdbYZGEClLg">Entidades e Relações</a>
+          
+          <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          <b>Ver</b>
+        </button>
           </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
           <div class="card-body">
             <h5 class="card-title">Entidade x Relação</h5>
             <div class="ml-3">
@@ -649,14 +686,20 @@
               </div>
             </div>
             <a href="https://images.app.goo.gl/gXrLVi9izvd5K5ag8" class="btn btn-primary mt-2" target="_blank">Exemplo</a>
-          </div>
+            </div>
+        </div>
         </div>
       <!--FIM CARD-->
       <!--INÍCIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingSeven">
             <a target="_blank" href="https://youtu.be/KSw0rTGEwPI">Relacionamentos</a>
+          
+          <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          <b>Ver</b>
+        </button>
           </div>
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
           <div class="card-body">
             <h5 class="card-title">O que são Relacionamentos?</h5>
             <div class="ml-3">
@@ -747,14 +790,20 @@
               </ul>
             </div>
             <a href="https://images.app.goo.gl/SBm53BHWHhodKJvX9" class="btn btn-primary mt-2" target="_blank">Exemplo</a>
-          </div>
+            </div>
+        </div>
         </div>
       <!--FIM CARD-->
       <!--INICIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingEight">
             <a target="_blank" href="https://youtu.be/sbIT5UXTEg8">Chave Primária, Estrangeira e outras</a>
+          
+          <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          <b>Ver</b>
+        </button>
           </div>
+          <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
           <div class="card-body">
             <h5 class="card-title">O que são Chaves?</h5>
             <div class="ml-3">
@@ -869,14 +918,20 @@
               </ml-3>
               <a href="https://images.app.goo.gl/1EhdNSu5aa8jZ3EHA" class="btn btn-primary mt-2" target="_blank">Exemplo</a>
             </div>
-          </div>
+            </div>
+        </div>
         </div>
       <!--FIM CARD-->
       <!--INICIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingNine">
             <a href="https://youtu.be/OVBFFe4-jSM" target="_blank">Cardinalidades</a>
+          
+          <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          <b>Ver</b>
+        </button>
           </div>
+          <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
           <div class="card-body">
             <h5 class="card-title">O que são?</h5>
             <div class="ml-3">
@@ -947,14 +1002,20 @@
               </div>
             </div>
             <a href="https://images.app.goo.gl/zFoXXZUEpDicR2Ft5" target="_blank" class="btn btn-primary ">Exemplo</a>
-          </div>
+            </div>
+        </div>
         </div>
       <!--FIM CARD-->  
       <!--INICIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingTen">
             <a href="https://youtu.be/BurdDn16ZgE" target="_blank">Restrições de Integridade</a>
+          
+          <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          <b>Ver</b>
+        </button>
           </div>
+          <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
           <div class="card-body">
             <h5 class="card-title">O que são Restrições de Integridade?</h5>
             <div class="ml-3">
@@ -1052,14 +1113,20 @@
               </ul>
             </div>
             <a href="https://images.app.goo.gl/b9eUyFCYVsX6GCoZA" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
-          </div>
+            </div>
+        </div>
         </div>
       <!--FIM CARD-->
       <!--INICIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingEleven">
             <a href="https://youtu.be/9plIQlzzPHA" target="_blank">Diagramação</a>
+          
+          <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+          <b>Ver</b>
+        </button>
           </div>
+          <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
           <div class="card-body">
             <h5 class="card-title">Diagramação - Notações gráifas</h5>
             <div class="ml3">
@@ -1107,14 +1174,20 @@
             </div>
 
             <a href="https://images.app.goo.gl/VeQvnzsUXeXNyeWq8" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
-          </div>
+            </div>
+        </div>
         </div>
       <!--FIM CARD-->
       <!--INICIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingTwelve">
             <a href="https://youtu.be/-DESqE_GdEA" target="_blank">Dicionário de Dados</a>
+          
+          <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+          <b>Ver</b>
+        </button>
           </div>
+          <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
           <div class="card-body">
             <h5 class="card-title">O que é?</h5>
             <div class="ml3">
@@ -1166,14 +1239,20 @@
               </ul>
             </div>
             <a href="https://images.app.goo.gl/bVpkJKmZqyWqY46N9" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
-          </div>
+            </div>
+        </div>
         </div>
       <!--FIM CARD-->
       <!--INICIO CARD-->
           <div class="card mt-3">
-            <div class="card-header">
+            <div class="card-header" id="headingThirteen">
               <a href="https://youtu.be/koe4GVN_83M" target="_blank">Dependências</a>
-            </div>
+            
+            <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+          <b>Ver</b>
+        </button>
+          </div>
+          <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion">
             <div class="card-body">
               <h5 class="card-title">Dependências e seus tipos</h5>
               <div class="ml-3">
@@ -1233,14 +1312,20 @@
               </div> 
 
               <a href="https://images.app.goo.gl/TYwrzEhMdoTqyVQQ8" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
-            </div>
+              </div>
+          </div>
           </div>
       <!--FIM CARD-->
       <!--INICIO CARD-->
           <div class="card mt-3">
-            <div class="card-header">
+            <div class="card-header" id="headingFourteen">
               <a href="https://youtu.be/NpG1Xt8LB_c" target="_blank" >Normalização e Anomalias</a>
-            </div>
+            
+            <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+          <b>Ver</b>
+        </button>
+          </div>
+          <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordion">
             <div class="card-body">
               <h5 class="card-title">Conceitos</h5>
               <div class="ml-3">
@@ -1316,14 +1401,20 @@
                   </div>
                 </div>
               <a href="https://images.app.goo.gl/rPudZ1KX78cJkAXQ9" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
-            </div>
+              </div>
+          </div>
           </div>
       <!--FIM CARD-->
       <!--INICIO CARD-->
           <div class="card mt-3">
-            <div class="card-header">
+            <div class="card-header" id="headingFifteen">
               <a href="https://youtu.be/eRaAMNjCFYw" target="_blank" >Normalização - Primeira Forma Normal</a>
-            </div>
+            
+            <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+          <b>Ver</b>
+        </button>
+          </div>
+          <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordion">
             <div class="card-body">
               <h5 class="card-title">Primeira forma normal 1º FN</h5>
               <div class="ml-3">
@@ -1368,14 +1459,20 @@
                 </ul>
               </div>
               <a href="https://images.app.goo.gl/pKQTxfynZL3ksG8X6" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
-            </div>
+              </div>
+          </div>
           </div>
       <!--FIM CARD-->
       <!--INICIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingSixteen">
             <a href="https://youtu.be/6ER9lWOk-cY" target="_blank">Normalização - Segunda Forma Normal</a>
+          
+          <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+          <b>Ver</b>
+        </button>
           </div>
+          <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordion">
           <div class="card-body">
             <h5 class="card-title">Segunda Forma Normal</h5>
             <div class="ml-3">
@@ -1424,14 +1521,20 @@
               </ul>
             </div>
             <a href="https://images.app.goo.gl/1nnXYoH3UXmYoctq6" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
-          </div>
+            </div>
+        </div>
         </div>
       <!--FIM CARD-->
       <!--INICIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingSeventeen">
             <a href="https://youtu.be/usA8QKvEHWw" target="_blank">Normalização - Terceira Forma Normal</a>
+          
+          <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+          <b>Ver</b>
+        </button>
           </div>
+          <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#accordion">
           <div class="card-body">
             <h5 class="card-title">Terceira Forma Normal</h5>
             <div class="ml-3">
@@ -1477,14 +1580,20 @@
               </div>
             </div>
             <a href="https://images.app.goo.gl/rejvasTSyC3Jdqxn7" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
-          </div>
+            </div>
+        </div>
         </div>
       <!--FIM CARD-->
       <!--INICIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingEighteen">
             <a href="https://youtu.be/o6mSiTO-vak" target="_blank">Normalização - Forma Normal de Boyce-Codd</a>
+          
+          <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+          <b>Ver</b>
+        </button>
           </div>
+          <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen" data-parent="#accordion">
           <div class="card-body">
             <h5 class="card-title">Forma Normal de Boyce-Codd</h5>
             <div class="ml-3">
@@ -1557,14 +1666,20 @@
               </ul>
             </div>
             <a href="https://images.app.goo.gl/qLMKJ52Bfru2bHV2A" target="_blank" class="btn btn-primary mt-2">Exemplo</a>
-          </div>
+            </div>
+        </div>
         </div>
       <!--FIM CARD-->
       <!--INICIO CARD-->
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" id="headingNineteen">
             <a href="https://youtu.be/hsQJAdWksMI" target="_blank">Projeto Prático do Curso</a>
+          
+          <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+          <b>Ver</b>
+        </button>
           </div>
+          <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen" data-parent="#accordion">
           <div class="card-body">
             <h5 class="card-title">Apresentação</h5>
             <div class="ml-3">
@@ -3942,15 +4057,20 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
-      </div>
+    </div>
       <!--FIM CARD-->
-
       <!--INICIO CARD-->
       <div class="card mt-3">
-        <div class="card-header">
+        <div class="card-header" id="headingTwenty">
           <a href="#" target="_blank">Conclusão</a>
-        </div>
+        
+        <button class="btn btn-link collapsed alignCollapse" data-toggle="collapse" data-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+          <b>Ver</b>
+        </button>
+          </div>
+          <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-parent="#accordion">
         <div class="card-body">
           <div class="ml-3">
             <div class="card-text">
@@ -3961,9 +4081,11 @@
               Agradeço ao professor Fábio dos Reis, pela qualidade,  e contribuição para que todos possam aprender mais sobre o mundo da tecnologia, pois o curso inteiro está no youtube para que todos possam se capacitar.
             </div>
           </div>
-        </div>
+          </div>
+      </div>
       </div>
       <!--FIM CARD-->
+    </div>
       
           <div class="mb-5"></div>
     </div>
